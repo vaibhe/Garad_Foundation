@@ -146,3 +146,8 @@ nav button{
 .nav__menu a:hover {
     color: var(--color-bg2);
 }
+
+.logo{
+    height:1rem;
+    width:7rem;
+}
