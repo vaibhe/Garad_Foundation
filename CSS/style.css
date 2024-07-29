@@ -12,7 +12,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
     color: #fff;
-    background: #1f2641;
+    background: #eaeaea;
 }
 
 .container {
@@ -34,7 +34,7 @@ h5{
 }
 
 h1{
-    font-size: 2.4rem;
+    font-size: 2.7rem;
 }
 
 h2{
@@ -46,7 +46,11 @@ h3{
 }
 
 h1{
-    font-size: 1.3rem;
+    font-size: 2.4rem;
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 700;
+    color: orangered;
 }
 
 a {
@@ -173,6 +177,24 @@ nav button{
 .banner-dots li.banner-active{
     width: 30px;
 }
+
+
+
+
+.mission-container{
+  padding-top: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.mission-para{
+    color: black;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    font-style: normal;
+}
+    
 
 @media screen and (max-width: 768px){
     .banner-slider{
