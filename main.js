@@ -45,3 +45,4 @@ bannerdots.forEach((li, key) => {
         reloadBannerSlider();
     })
 })
+
