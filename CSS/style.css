@@ -12,7 +12,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
     color: #fff;
-    background: #1f2641;
+    background: #eaeaea;
 }
 
 .container {
@@ -35,6 +35,11 @@ h5{
 
 h1{
     font-size: 2.4rem;
+    text-align: center;
+    margin-top: 4rem;
+    font-weight: 700;
+    color: orangered;
+    line-height: 1.2;
 }
 
 h2{
@@ -45,7 +50,7 @@ h3{
     font-size: 1.6rem;
 }
 
-h1{
+h4{
     font-size: 1.3rem;
 }
 
@@ -179,6 +184,22 @@ nav button{
         height: 400px;
     }
 }
+
+/* ============================= MISSION ================================ */
+.mission-container{
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  
+  .mission-para{
+      color: black;
+      font-family: "Lobster", sans-serif;
+      font-weight: 400;
+      font-size: 1.3rem;
+      font-style: normal;
+  }
+  
 
 /* ============================= TESTIMONIALS ================================ */
 .swiper {
