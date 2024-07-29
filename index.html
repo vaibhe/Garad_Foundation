@@ -11,12 +11,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Sacramento&display=swap" rel="stylesheet">
 
+    <!-- Swiper JS (Testimonials) -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <!-- CSS STYLESHEET -->
     <link rel="stylesheet" href="CSS/style.css">
 
 </head>
 <body>
     
+    <!--================================== NAVBAR ==============================-->
     <nav>
         <div class="container nav__container">
             <a href="index.html" class="nav-logo"><img src="images/logo.png"></a>
@@ -31,6 +37,7 @@
     </nav>
     <!--================================== END OF NAVBAR ==============================-->
 
+    <!--================================== BANNER ==============================-->
     <header class="banner">
         
         <div class="banner-slider">
@@ -62,8 +69,48 @@
     <section class="categories"></section>
     <section class="activites"></section>
     <section class="blogs"></section>
-    <section class="testimonials"></section>
+
+    <!--================================== TESTIMONIALS ==============================-->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <h2 class="testimonials-heading">Testimonials!</h2>
+        </div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/Activities5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/Activities5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/Activities5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/Activities5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/Activities5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/Activities5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/Activities5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/Activities5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/Activities5.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!--================================== END OF TESTIMONIALS ==============================-->
 
     <script src="main.js"></script>
+    <!-- Swiper JS (Testimonials) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper  -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
