@@ -8,10 +8,9 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
-    color: #fff;
     background: #eaeaea;
 }
 
@@ -29,23 +28,23 @@ h1,
 h2,
 h3,
 h4,
-h5{
+h5 {
     line-height: 1.2;
 }
 
-h1{
+h1 {
     font-size: 2.7rem;
 }
 
-h2{
+h2 {
     font-size: 2rem;
 }
 
-h3{
+h3 {
     font-size: 1.6rem;
 }
 
-h1{
+h1 {
     font-size: 2.4rem;
     text-align: center;
     margin-top: 4rem;
@@ -59,7 +58,7 @@ a {
 
 img {
     width: 100%;
-    display: block;
+    display: inline;
     object-fit: cover;
 }
 
@@ -80,7 +79,7 @@ nav {
     align-items: center;
 }
 
-nav button{
+nav button {
     display: none;
 }
 
@@ -99,14 +98,14 @@ nav button{
     color: #424890;
 }
 
-.nav-logo{
-    height:0.8rem;
-    width:3rem;
+.nav-logo {
+    height: 0.8rem;
+    width: 3rem;
 }
 
 /* =============================== Banner ===================================== */
 
-.banner-slider{
+.banner-slider {
     width: 100%;
     /* max-width: 120vw; */
     height: 700px;
@@ -115,7 +114,7 @@ nav button{
     overflow: hidden;
 }
 
-.banner-list{
+.banner-list {
     position: absolute;
     top: 0;
     left: 0;
@@ -125,14 +124,14 @@ nav button{
     transition: 1s;
 }
 
-.banner-list img{
+.banner-list img {
     width: 1600px;
     /* max-width: 100vw; */
     height: 100%;
     object-fit: cover;
 }
 
-.banner-buttons{
+.banner-buttons {
     position: absolute;
     top: 45%;
     left: 5%;
@@ -141,7 +140,7 @@ nav button{
     justify-content: space-between;
 }
 
-.banner-buttons button{
+.banner-buttons button {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -152,7 +151,7 @@ nav button{
     font-weight: bold;
 }
 
-.banner-dots{
+.banner-dots {
     position: absolute;
     bottom: 10px;
     color: grey;
@@ -164,7 +163,7 @@ nav button{
     justify-content: center;
 }
 
-.banner-dots li{
+.banner-dots li {
     list-style: none;
     width: 10px;
     height: 10px;
@@ -174,30 +173,254 @@ nav button{
     transition: 1s;
 }
 
-.banner-dots li.banner-active{
+.banner-dots li.banner-active {
     width: 30px;
 }
 
 
-
-
-.mission-container{
-  padding-top: 1rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
+/* =============================== Mission start ===================================== */
+.mission-container {
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
-.mission-para{
+.mission-para {
     color: black;
     font-family: "Lobster", sans-serif;
     font-weight: 400;
     font-size: 1.3rem;
     font-style: normal;
 }
+
+/* =============================== Mission end ===================================== */
+
+/* =============================== Objective start ===================================== */
+
+.objective-img1 {
+    max-width: 420px;
+    float: left;
+    border: 3px solid rgb(132, 99, 43);
+    border-radius: 10px;
+    margin-right: 5.5rem;
+    box-shadow: 15px 10px 6px 0 gray;
+
+
+}
+
+.object-container1 {
+    margin: 150px;
+    width: 80%;
+}
+
+.objective-text1 p {
+
+    font-size: 1.1rem;
+
+}
+
+.objective-text1 h3 {
+    font-size: 32px;
+}
+
+.objective-img2 {
+    max-width: 420px;
+    float: right;
+    border: 3px solid rgb(132, 99, 43);
+    border-radius: 10px;
+    box-shadow: 15px 10px 6px 0 gray;
     
 
-@media screen and (max-width: 768px){
-    .banner-slider{
-        height: 400px;
-    }
 }
+
+.object-container2 {
+    display: flex;
+    margin: 150px;
+    width: 80%;
+    
+}
+
+.objective-text2 p {
+
+    font-size: 1.2rem;
+
+
+}
+
+.objective-text2 h3 {
+    margin-top: 3rem;
+    font-size: 32px;
+    
+}
+
+.object-container3 {
+    margin: 150px;
+    width: 80%;
+}
+
+
+.objective-img3 {
+    max-width: 420px;
+    float: left;
+    border: 3px solid rgb(132, 99, 43);
+    border-radius: 10px;
+    margin-right: 5.5rem;
+    box-shadow: 15px 10px 6px 0 gray;
+
+
+}
+
+.objective-text3 p {
+
+    font-size: 1.1rem;
+
+}
+
+.objective-text3 h3 {
+    font-size: 32px;
+}
+
+.objective-img3:hover, .objective-img2:hover, .objective-img1:hover{
+    max-width: 450px;
+    transition: 1s;
+}
+
+/* =============================== Objective end ===================================== */
+
+/* =============================== Volunteer start ===================================== */
+
+.volunteer-container{
+    width: 80rem;
+    height: 40rem;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.volunteer-card1{
+    width: 20rem;
+    height: 24rem;
+    background-color: rgb(195, 182, 182);
+}
+
+.volunteer-card1 p{
+    font-size: 1.1rem;
+    padding: 3rem;
+
+}
+
+
+
+
+
+
+
+
+/* 
+@media screen and (max-width: 768px) {
+
+    header {
+        width: 45rem;
+    }
+
+    section {
+        width: 45rem;
+    }
+
+    
+    h1 {
+        font-size: 2.4rem;
+        text-align: center;
+        margin-top: 4rem;
+        font-weight: 800;
+        color: orangered;
+    }
+
+    .banner-list img {
+        width: 831px;
+        max-width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    
+
+
+    .mission-para {
+        font-size: 1.5rem;
+     }
+
+}
+
+
+
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 425px) {
+
+    
+
+    section {
+        width: 45rem;
+    }
+
+    header{
+        max-width: ;
+    }
+
+    h1 {
+        font-size: 3.4rem;
+        text-align: center;
+        margin-top: 4rem;
+        font-weight: 800;
+        color: orangered;
+    }
+
+    
+
+    .banner{
+        width: 100%;
+    }
+
+    .banner-list img {
+        width: 931px;
+        max-width: 100vw;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    
+
+
+    .mission-para {
+       font-size: 2.3rem;
+    }
+
+
+
+
+
+
+    .object-container1 {
+      
+     border: 5px solid pink;
+     padding: 5rem;
+     height: 60rem;
+     width: 60rem;
+    }
+
+    .objective-img1 {
+        justify-content: center;
+        align-items: center;
+        max-width: 520px;
+        border: 5px solid rgb(132, 99, 43);
+        border-radius: 15px;
+    }
+
+
+}  */
