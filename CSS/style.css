@@ -48,6 +48,7 @@ h2{
 
 h3{
     font-size: 1.6rem;
+    color: black;
 }
 
 h4{
@@ -56,6 +57,10 @@ h4{
 
 a {
     color: black;
+}
+
+p{
+    color:black
 }
 
 img {
@@ -200,6 +205,123 @@ nav button{
     font-size: 1.3rem;
     font-style: normal;
 } 
+
+.objective-img1 {
+    max-width: 420px;
+    float: left;
+    border: 3px solid rgb(132, 99, 43);
+    border-radius: 10px;
+    margin-right: 5.5rem;
+    box-shadow: 15px 10px 6px 0 gray;
+
+
+}
+
+.object-container1 {
+    margin: 150px;
+    width: 80%;
+}
+
+.objective-text1 p {
+
+    font-size: 1.1rem;
+    color: black;
+
+}
+
+.objective-text1 h3 {
+    font-size: 32px;
+}
+
+.objective-img2 {
+    max-width: 420px;
+    float: right;
+    border: 3px solid rgb(132, 99, 43);
+    border-radius: 10px;
+    box-shadow: 15px 10px 6px 0 gray;
+    
+
+}
+
+.object-container2 {
+    display: flex;
+    margin: 150px;
+    width: 80%;
+    
+}
+
+.objective-text2 p {
+
+    font-size: 1.2rem;
+
+
+}
+
+.objective-text2 h3 {
+    margin-top: 3rem;
+    font-size: 32px;
+    
+}
+
+.object-container3 {
+    margin: 150px;
+    width: 80%;
+}
+
+
+.objective-img3 {
+    max-width: 420px;
+    float: left;
+    border: 3px solid rgb(132, 99, 43);
+    border-radius: 10px;
+    margin-right: 5.5rem;
+    box-shadow: 15px 10px 6px 0 gray;
+
+
+}
+
+.objective-text3 p {
+
+    font-size: 1.1rem;
+
+}
+
+.objective-text3 h3 {
+    font-size: 32px;
+}
+
+.objective-img3:hover, .objective-img2:hover, .objective-img1:hover{
+    max-width: 450px;
+    transition: 1s;
+}
+
+/* =============================== Objective end ===================================== */
+
+/* =============================== Volunteer start ===================================== */
+
+.volunteer-container{
+    width: 80rem;
+    height: 40rem;
+    border: 2px solid black;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.volunteer-card1{
+    width: 20rem;
+    height: 24rem;
+    background-color: rgb(195, 182, 182);
+}
+
+.volunteer-card1 p{
+    font-size: 1.1rem;
+    padding: 3rem;
+
+}
 
 /* ============================= TESTIMONIALS ================================ */
 
