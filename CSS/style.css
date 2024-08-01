@@ -331,6 +331,104 @@ nav button {
 
 /* =============================== Objective end ===================================== */
 
+/* =============================== Dynamic Numbers =================================== */
+
+.numbers-section {
+    background-color: #2F2F2F;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.numbers-wrapper{
+    /* border: 1px solid white; */
+    /* position: absolute; */
+    /* transform: translate(-50%, -50%); */
+    /* top: 50%;
+    left: 50%; */
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    position: relative;
+    left: 8.5rem;
+}
+
+.numbers-container{
+    width: 28vmin;
+    height: 28vmin;
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: relative;
+    font-size: 16px;
+    border-radius: 0.5em;
+    /* background-color: #21242b; */
+    /* border-bottom: 10px solid #18f98f; */
+}
+
+i {
+    color: #fdd831;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+span.numbers-num{
+    color: #ffffff;
+    display: grid;
+    place-items: center;
+    font-weight: 600;
+    font-size: 3em;
+}
+
+span.numbers-text{
+    color: #e0e0e0;
+    font-size: 1em;
+    text-align: center;
+    pad: 0.7em 0;
+    font-weight: 400;
+    line-height: 0;
+}
+
+@media screen and (max-width: 1024px){
+    .numbers-wrapper{
+        width: 85vm;
+    }
+
+    .numbers-container {
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .numbers-wrapper{
+        width: 90vw;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .numbers-container{
+        width: calc(50% - 40px);
+        height: 30vmin;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .numbers-wrapper{
+        gap: 15px;
+    }
+
+    .numbers-container{
+        width: 100%;
+        height: 25vmin;
+        font-size: 8px;
+    }
+}
+
 /* =============================== Volunteer start ===================================== */
 
 
