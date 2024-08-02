@@ -24,6 +24,16 @@
         href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lobster&family=Rubik+Doodle+Shadow&display=swap"
         rel="stylesheet">
 
+    <!-- GOOGLE FONTS (MANROPE)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"> 
+
+    <!-- GOOGLE FONTS (FUZZY BUBBLE)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+
     <!-- Swiper JS (Testimonials) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -31,6 +41,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">    
 
     <!-- CSS STYLESHEET -->
     <link rel="stylesheet" href="CSS/style.css">
@@ -41,72 +54,108 @@
 
     <!--================================== NAVBAR ==============================-->
 
-    <nav>
-        <div class="container nav__container">
-            <a href="index.html" class="nav-logo"><img src="images/logo.png"></a>
-            <u1 class="nav__menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="index.html">Activities</a></li>
-                <li><a href="subjects.html">Gallery</a></li>
-                <li><a href="contact.html">Join Us</a></li>
-            </u1>
-        </div>
-    </nav>
+    <header class="navbar-header" id="header">
+        <nav class="nav nav-container">
+            <a href="#" class="nav__logo">
+                <img src="images/logo.png" alt="logo image">
+                <!-- Garad Foundation -->
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                 <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#popular" class="nav__link">Activities</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#recently" class="nav__link">Gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#joinus" class="nav__link">Join Us</a>
+                    </li>
+                 </ul>
+
+                 <!-- Close button -->
+                 <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                 </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Toggle button  -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!--================================== BANNER ==============================-->
 
-    <header class="banner">
+    <section class="banner" id="banner">
 
         <div class="banner-slider">
-            <div class="banner-list">
-                <div class="banner-item">
+            <!-- <div class="banner-list"> -->
+                
+                <!-- <div class="banner-item">
                     <img src="images/BannerImage1.jpg">
+                </div> -->
+
+                <div class="banner-item banner-item2">
+                    <div class="banneritem-left">
+                        <h1 class="bannerleft-heading">Garad Foundation</h1>
+                        <p class="bannerleft-subheading">GLORY OF HUMANITY :)</p>
+                        <a href="#banner" class="bannerleft-button">About Us</a>
+                    </div>
+                    <div class="banneritem-right">
+                        <div class="bannerright-image">
+                          <img src="images/BannerImage1-removebg.png">
+                        </div>
+                    </div>
                 </div>
-                <div class="banner-item">
-                    <img src="images/BannerImage2.jpg">
-                </div>
-            </div>
+
+            <!-- </div> -->
             <!-- Button prev and next -->
-            <div class="banner-buttons">
-                <button id="banner-prev">
-                </button>
-                        <button id="banner-next">></button>
-            </div>
+            <!-- <div class="banner-buttons">
+                <button id="banner-prev"><</button>
+                <button id="banner-next">></button>
+            </div> -->
 
             <!-- Dots  -->
-            <ul class="banner-dots">
+            <!-- <ul class="banner-dots">
                 <li class="banner-active"></li>
                 <li></li>
-            </ul>
+            </ul> -->
         </div>
 
-    </header>
+    </section>
 
     <!--================================== MISSION ==============================-->
 
-    <section class="mission">
-
-        <h1>Mission</h1>
-
+    <section class="mission" id="mission">
+  
         <div class="mission-container">
+            <h1 class="mission-heading">Our Mission</h1>
+            <a href="#" class="mission-aim">WHAT WE AIM TO DO ?</a>
             <div class="mission-para">
-                <p> "Our mission is to empower and inspire the youth to be the driving force of positive change in the
-                    society.We believe that youth are our greatest asset, and we are committed to engaging them in
-                    meaningful social work to uplift rural communities and nurture the education,sports,and arts
-                    aspirations of children.Through our collective efforts, we aim to create a brighter and more
-                    inclusive future for all."</p>
-                <br>
-
+                <p class="missionpara-info"> "Our Mission Is To Empower And Inspire The Youth To Be The Driving Force Of Positive Change In The Society. 
+                    We Believe That Youth Are Our Greatest Asset, And We Are Committed To Engaging Them In Meaningful Social Work To Uplift Rural Communities
+                     And Nurture The Education, Sports, And Arts Aspirations Of Children. Through Our Collective Efforts, 
+                     We Aim To Create A Brighter And More Inclusive Future For All."</p>
             </div>
-        </div>
-        
+            <a href="#" class="mission-button">Learn More About Us</a>
+        </div>   
     </section>
 
         <!--================================== OBJECTIVE ==============================-->
 
-        <section class="objective">
-            <h1>Objectives</h1>
+        <section class="objective" id="objective">
+            <h1 class="objective-heading">Objectives</h1>
             <div class="object-container1">
                 <div class="objective-text1">
                     <img src="./images/studentdev.jpg" class="objective-img1" alt="">
@@ -154,30 +203,30 @@
         <!-- <section class="activites"></section> -->
         <!-- <section class="blogs"></section> -->
 
-        <!-- Dynamic Number -->
-        <section class="numbers-section">
+        <!-- ==================================== Dynamic Number ====================================== -->
+        <section class="numbers-section" id="numbers-section">
             <div class="numbers-wrapper">
 
                 <div class="numbers-container">
-                    <i class="fa-solid fa-list-check"></i>
-                    <span class="numbers-num" data-val="400+">000</span>
+                    <i class="fa-solid fa-list-check dynamicnumbers-icon"></i>
+                    <span class="numbers-num" data-val="400">000</span>
                     <span class="numbers-text">Projects Completed</span>
                 </div>
 
                 <div class="numbers-container">
-                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <i class="fa-solid fa-money-check-dollar dynamicnumbers-icon"></i>
                     <span class="numbers-num" data-val="340">000</span>
                     <span class="numbers-text">Donors</span>
                 </div>
 
                 <div class="numbers-container">
-                    <i class="fa-solid fa-users"></i>
+                    <i class="fa-solid fa-users dynamicnumbers-icon"></i>
                     <span class="numbers-num" data-val="250">000</span>
                     <span class="numbers-text">Volunteers</span>
                 </div>
 
                 <div class="numbers-container">
-                    <i class="fa-solid fa-layer-group"></i>
+                    <i class="fa-solid fa-layer-group dynamicnumbers-icon"></i>
                     <span class="numbers-num" data-val="280">000</span>
                     <span class="numbers-text">Categories Served</span>
                 </div>
@@ -188,7 +237,7 @@
         <!--================================== VOLUNTEER ==============================-->
 
 
-        <section class="becomevolunteer">
+        <section class="becomevolunteer" id="becomevolunteer">
     
             <div class="volunteer-container">
                 <div class="volunteer-heading">
@@ -261,7 +310,7 @@
 
     <!--================================== TESTIMONIALS ==============================-->
 
-    <section class="section-t section-testimonials">
+    <section class="section-t section-testimonials" id="testimonials">
         <div class="testimonials-container">
             <h2 class="testimonials-heading">Testimonials!</h2>
         </div>
@@ -279,7 +328,7 @@
                             <img loading="lazy" src="images/dinesh.png" alt="member review">
                         </figure>
                         <div class="client-data-details">
-                            <p>Dinesh Mistri</p>
+                            <p>Anish Mhaske</p>
                             <p>Hardware </p>
                         </div>
                     </div>
@@ -295,7 +344,7 @@
                             <img loading="lazy" src="images/swayam.png" alt="member review">
                         </figure>
                         <div class="client-data-details">
-                            <p>Swayam</p>
+                            <p>Anish Mhaske</p>
                             <p>Gamer </p>
                         </div>
                     </div>
@@ -311,7 +360,7 @@
                             <img loading="lazy" src="images/vaibhav.jpeg" alt="member review">
                         </figure>
                         <div class="client-data-details">
-                            <p>Vaibhav</p>
+                            <p>Anish Mhaske</p>
                             <p>Coder </p>
                         </div>
                     </div>
@@ -327,7 +376,7 @@
                             <img loading="lazy" src="images/vinay.jpeg" alt="member review">
                         </figure>
                         <div class="client-data-details">
-                            <p>Vinay</p>
+                            <p>Anish Mhaske</p>
                             <p>Hacker</p>
                         </div>
                     </div>
@@ -343,7 +392,7 @@
                             <img loading="lazy" src="images/bhakti.png" alt="member review">
                         </figure>
                         <div class="client-data-details">
-                            <p>Dinesh Mistri</p>
+                            <p>Anish Mhaske</p>
                             <p>Hardware </p>
                         </div>
                     </div>
@@ -359,7 +408,7 @@
                             <img loading="lazy" src="images/dinesh.png" alt="member review">
                         </figure>
                         <div class="client-data-details">
-                            <p>Dinesh Mistri</p>
+                            <p>Anish Mhaske</p>
                             <p>Hardware </p>
                         </div>
                     </div>
@@ -375,7 +424,7 @@
                             <img loading="lazy" src="images/dinesh.png" alt="member review">
                         </figure>
                         <div class="client-data-details">
-                            <p>Dinesh Mistri</p>
+                            <p>Anish Mhaske</p>
                             <p>Hardware </p>
                         </div>
                     </div>
@@ -391,7 +440,7 @@
                             <img loading="lazy" src="images/dinesh.png" alt="member review">
                         </figure>
                         <div class="client-data-details">
-                            <p>Dinesh Mistri</p>
+                            <p>Anish Mhaske</p>
                             <p>Hardware </p>
                         </div>
                     </div>
@@ -407,7 +456,7 @@
                             <img loading="lazy" src="images/dinesh.png" alt="member review">
                         </figure>
                         <div class="client-data-details">
-                            <p>Dinesh Mistri</p>
+                            <p>Anish Mhaske</p>
                             <p>Hardware </p>
                         </div>
                     </div>
@@ -419,7 +468,7 @@
     </section>
 
 
-    <!-- Footer -->
+    <!-- ============================================ Footer =============================================-->
     <footer class="footer-distributed">
 
         <div class="footer-left">
@@ -488,6 +537,11 @@
         </div>
 
     </footer>
+
+    <!-- ================================= SCROLL UP ============================= -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
     <!--================================== JS CODE ==============================-->
 
