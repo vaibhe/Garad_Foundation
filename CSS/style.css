@@ -5,7 +5,7 @@
     outline: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 
 }
 
@@ -540,7 +540,7 @@ img {
     float: left;
     border-radius: 10px;
     margin-right: 5.5rem;
-    /* box-shadow: 15px 10px 6px 0 gray; */
+    box-shadow: 15px 10px 6px 0 gray;
 }
 
 .object-container1 {
@@ -574,7 +574,7 @@ img {
     max-width: 280px;
     float: right;
     border-radius: 10px;
-    /* box-shadow: 15px 10px 6px 0 gray; */
+    box-shadow: 15px 10px 6px 0 gray;
 }
 
 .object-container2 {
@@ -611,6 +611,7 @@ img {
     background-color: hsl(19, 100%, 96%);
     border-radius: 25px; 
     /* box-shadow: 15px 10px 6px 0 gray; */
+  
 }
 
 
@@ -619,7 +620,7 @@ img {
     float: left;
     border-radius: 10px;
     margin-right: 5.5rem;
-    /* box-shadow: 15px 10px 6px 0 gray; */
+    box-shadow: 15px 10px 6px 0 gray;
 }
 
 .objective-text3 p {
@@ -634,6 +635,22 @@ img {
     text-align: left;
     /* padding-top: 2rem; */
 }
+
+/* .objective-img3:hover,
+.objective-img2:hover,
+.objective-img1:hover {
+    max-width: 450px;
+    transition: 1s;
+    box-shadow: 15px 10px 6px 0 gray;
+} */
+
+/* .objective-img3:hover,
+.objective-img2:hover,
+.objective-img1:hover {
+    max-width: 450px;
+    transition: 1s;
+    box-shadow: 15px 10px 6px 0 gray;
+} */
 
 /* .objective-img3:hover,
 .objective-img2:hover,
