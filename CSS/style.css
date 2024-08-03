@@ -503,16 +503,28 @@ img {
 /* ================================ OBJECTIVES ============================ */
 
 .objective{
-    background-color: #FFEEA9;
+    background-color: #FFDF5E;
     padding-bottom: 1rem;
 }
 
 .objective-heading {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-size: 60px;
+    color: #333356;
+    line-height: 1;
+    padding: 5rem;
+    padding-bottom: 3rem;
     margin-top: 0rem;
+    /* margin-bottom: 3rem; */
+}
+
+.object-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .objective-img1 {
-    max-width: 420px;
+    max-width: 280px;
     float: left;
     border-radius: 10px;
     margin-right: 5.5rem;
@@ -520,66 +532,79 @@ img {
 }
 
 .object-container1 {
-    margin: 150px;
+    /* margin: 150px; */
+    margin-left: 50px;
     width: 80%;
-
     height: 19rem;
     padding: 2rem;
-    background-color: #fff;
+    background-color: hsl(19, 100%, 96%);
     border-radius: 25px;
     margin-top: 5rem;
+    /* box-shadow: 15px 10px 6px 0 gray; */
 
 }
 
 .objective-text1 p {
     font-size: 1.1rem;
     color: black;
+    text-align: left;
 }
 
 .objective-text1 h3 {
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
+    font-family: "Manrope", sans-serif;
     font-size: 32px;
+    font-weight: 800;
+    text-align: left;
 }
 
 .objective-img2 {
-    max-width: 420px;
+    max-width: 280px;
     float: right;
     border-radius: 10px;
     box-shadow: 15px 10px 6px 0 gray;
 }
 
 .object-container2 {
-    display: flex;
-    margin: 150px;
+    margin-top: 82px;
+    margin-left: 50px;
     width: 80%;
-
     height: 19rem;
     padding: 2rem;
-    background-color: #fff;
+    background-color: hsl(19, 100%, 96%);
     border-radius: 25px;
+    /* box-shadow: 15px 10px 6px 0 gray;   */
 }
 
 .objective-text2 p {
     font-size: 1.2rem;
+    text-align: left;
 }
 
 .objective-text2 h3 {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
+    font-family: "Manrope", sans-serif;
     font-size: 32px;
+    font-weight: 800;
+    text-align: left;
 }
 
 .object-container3 {
-    margin: 150px;
+    margin-top: 82px;
+    margin-left: 50px;
+    margin-bottom: 90px;
     width: 80%;
-    height: 18rem;
+    height: 19rem;
     padding: 2rem;
-    background-color: #fff;
-    border-radius: 25px;   
+    background-color: hsl(19, 100%, 96%);
+    border-radius: 25px; 
+    /* box-shadow: 15px 10px 6px 0 gray; */
+  
 }
 
 
 .objective-img3 {
-    max-width: 420px;
+    max-width: 280px;
     float: left;
     border-radius: 10px;
     margin-right: 5.5rem;
@@ -588,20 +613,24 @@ img {
 
 .objective-text3 p {
     font-size: 1.1rem;
+    text-align: left;
 }
 
 .objective-text3 h3 {
+    font-family: "Manrope", sans-serif;
     font-size: 32px;
-    padding-top: 2rem;
+    font-weight: 800;
+    text-align: left;
+    /* padding-top: 2rem; */
 }
 
-.objective-img3:hover,
+/* .objective-img3:hover,
 .objective-img2:hover,
 .objective-img1:hover {
     max-width: 450px;
     transition: 1s;
     box-shadow: 15px 10px 6px 0 gray;
-}
+} */
 
 /* =============================== Objective end ===================================== */
 
