@@ -133,3 +133,5 @@ bannerdots.forEach((li, key) => {
         reloadBannerSlider();
     })
 })
+
+// footer image (1440*1009)
