@@ -333,10 +333,8 @@ img {
     font-size: 80px;
     color: #333356;
     margin-bottom: 2rem;
-    position: relative;
-    right: 6%;
-
-
+    /* position: relative;
+    right: 6%; */
 }
 
 .bannerleft-subheading {
@@ -535,6 +533,17 @@ img {
     grid-template-columns: 1fr 1fr;
 }
 
+.object-container > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 20px 15px 10px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.object-container > div:hover .objective-img {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
 .objective-img1 {
     max-width: 280px;
     float: left;
@@ -636,29 +645,45 @@ img {
     /* padding-top: 2rem; */
 }
 
-/* .objective-img3:hover,
-.objective-img2:hover,
-.objective-img1:hover {
-    max-width: 450px;
-    transition: 1s;
+.objective-img4 {
+    max-width: 280px;
+    float: right;
+    border-radius: 10px;
     box-shadow: 15px 10px 6px 0 gray;
-} */
+}
 
-/* .objective-img3:hover,
-.objective-img2:hover,
-.objective-img1:hover {
-    max-width: 450px;
-    transition: 1s;
-    box-shadow: 15px 10px 6px 0 gray;
-} */
+.object-container4 {
+    margin-top: 82px;
+    margin-left: 50px;
+    width: 80%;
+    height: 19rem;
+    padding: 2rem;
+    background-color: hsl(19, 100%, 96%);
+    border-radius: 25px;
+    /* box-shadow: 15px 10px 6px 0 gray;   */
+}
 
-/* .objective-img3:hover,
-.objective-img2:hover,
-.objective-img1:hover {
-    max-width: 450px;
-    transition: 1s;
-    box-shadow: 15px 10px 6px 0 gray;
-} */
+.objective-text4 p {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.objective-text4 h3 {
+    /* margin-top: 3rem; */
+    font-family: "Manrope", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.object-container > div:hover h3 {
+    color: #FF5733;
+    transition: 0.2s;
+}
+
+.object-container > div:hover p {
+    color: #333356;
+}
 
 
 
@@ -764,15 +789,11 @@ span.numbers-text {
 
 /* =============================== Activity  ===================================== */
 
-
-
 .actvity_container {
     display: grid;
     place-items: center;
     margin-inline: 1.5rem;
     padding-block: 5rem;
-
-
 }
 
 .activity_cards {
@@ -938,22 +959,27 @@ span.numbers-text {
 
 /* =============================== Volunteer start ===================================== */
 
-
-/* 
-.becomevolunteer{
-   background-color: #FF7D29;
-} */
 .volunteer-container {
-    width: 90%;
-    margin: 50px auto;
-    background-color: #FFE6A7;
-
+    width: 100%;
+    background-color: #333356;
 }
 
 .volunteer-heading {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-size: 60px;
+    color: #FFFFFF;
     text-align: center;
-    font-size: 30px;
-    margin-bottom: 50px;
+    line-height: 1;
+    padding: 3rem;
+    padding-bottom: 2.5rem;
+}
+
+.volunteer-subheading {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+    color: #E9DEFC;
+    margin-bottom: 5px;
 }
 
 .volunteer-row {
@@ -970,62 +996,85 @@ span.numbers-text {
     margin-bottom: 50px;
     transition: 0.3s;
     border-radius: 10px;
+    padding-bottom: 10px;
     /* box-shadow: 15px 10px 6px 0 gray; */
 }
 
 .volunteer-card-header {
     text-align: center;
-    padding: 50px 10px;
+    padding: 40px 10px;
     color: #fff;
 }
 
+.volunteer-card-header h3{
+    color: #FFFFFF;
+}
+
 .volunteer-icon1::before {
-    font-size: 4rem;
+    font-size: 3rem;
     content: "\f2b5";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    color: orangered;
+    color: #FFF;
+    background-color: #BB3A8E;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.volunteer-icon1, .volunteer-icon2,
+.volunteer-icon3, .volunteer-icon4{
+    padding-bottom: 2rem;
 }
 
 .volunteer-icon2::before {
-    font-size: 4rem;
+    font-size: 3rem;
     content: "\f1ae";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    color: orangered;
+    color: #FFF;
+    background-color: #23A094;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 0.5rem;
 }
 
 .volunteer-icon3::before {
-    font-size: 4rem;
+    font-size: 3rem;
     content: "\f00c";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    color: orangered;
+    color: #FFF;
+    background-color: #FE8F50;
+    padding: 0.8rem 1.4rem 0.8rem 1.4rem;
+    border-radius: 0.5rem;
 }
 
 .volunteer-icon4::before {
-    font-size: 4rem;
+    font-size: 3rem;
     content: "\24";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
-    color: orangered;
+    color: #000;
+    background-color: #fdd831;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 0.5rem;
 }
 
 
 .volunteer-card-body {
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
     text-align: center;
     font-size: 18px;
+
 }
 
 .volunteer-card-body .btn {
-
     display: block;
-    color: #fff;
+    color: #333356;
+    font-weight: 600;
     margin-left: 2rem;
     width: 80%;
     text-align: center;
-    background: #23A094;
+    background: #FFDF5E;
     transition: all 400ms ease;
     border-radius: .4rem;
     margin-top: 5px;
@@ -1055,11 +1104,6 @@ span.numbers-text {
         width: 100%;
     }
 
-    .volunteer-heading {
-        padding: 20px;
-        font-size: 20px;
-    }
-
     .volunteer-card {
         width: 80%;
     }
@@ -1069,9 +1113,19 @@ span.numbers-text {
 
 /* ============================= TESTIMONIALS ================================ */
 
+/* 
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-size: 60px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 1;
+    padding: 3rem;
+    padding-bottom: 2.5rem;
+*/
+
 .section-t {
     padding: 3rem 0;
-    background-color: #FEFFD2;
+    background-color: #23A094; /* #FEFFD2 */
 }
 
 .testimonials-container {
@@ -1080,10 +1134,14 @@ span.numbers-text {
 }
 
 .testimonials-heading {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-size: 60px;
+    color: #333356;
     font-weight: 700;
-    margin-bottom: 1rem;
-    text-transform: capitalize;
-    position: relative;
+    text-align: center;
+    line-height: 1;
+    padding: 3rem;
+    padding-bottom: 2.5rem;
 }
 
 .grid {
@@ -1128,7 +1186,7 @@ span.numbers-text {
 
 .swiper-client-msg {
     padding: 5rem 8rem;
-    background-color: white;
+    background-color: #FFFFFF;
     border-radius: 10px;
     text-align: left;
     box-shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
