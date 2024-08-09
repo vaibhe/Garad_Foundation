@@ -17,7 +17,6 @@ body {
     background-color: #FE8F50;
     /* hsl(19, 100%, 96%)  */
     transition: background 0.4s;
-    /* for dark mode animation */
 }
 
 html {
@@ -87,13 +86,12 @@ img {
 /* =========================== NAVBAR ========================== */
 
 .navbar-header {
-    border-radius: .5rem;
-    width: 75%;
     background-color: #FFFFFF;
     /* hsl(19, 100%, 96%) */
-    position: relative;
-    top: .5rem;
-    left: 13rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 100;
     transition: box-shadow .3s, background .4s;
 }
@@ -268,7 +266,7 @@ img {
     display: inline-flex;
     padding: .35rem;
     border-radius: .25rem;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: hsl(19, 64%, 54%);
     z-index: 10;
     transition: bottom .3s, transform .3s, background .4s;
@@ -292,7 +290,7 @@ img {
     position: relative;
     top: 5rem;
     overflow: hidden;
-    height: 80vh;
+    height: 100vh;
     margin-bottom: 5rem;
 }
 
@@ -513,7 +511,7 @@ img {
 
 
 .objective{
-    background-color: #FFDF5E;
+    background-color: #23A094;
     padding-bottom: 1rem;
 }
 
@@ -789,21 +787,39 @@ span.numbers-text {
 
 /* =============================== Activity  ===================================== */
 
+.activity {
+    background-color: #fdd831;
+}
+
+.activity-heading {
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-size: 80px;
+    color: #333356;
+    line-height: 1;
+    padding: 2rem;
+    margin-top: 0;
+}
+
 .actvity_container {
     display: grid;
-    place-items: center;
+    /* place-items: center; */
     margin-inline: 1.5rem;
-    padding-block: 5rem;
+    /* padding: 0.5rem 0.5rem; */
 }
 
 .activity_cards {
     display: grid;
     row-gap: 3.5rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
 }
 
 .card__article {
     position: relative;
     overflow: hidden;
+    margin-right: 7rem;
+    
 }
 
 .card__img {
@@ -812,11 +828,10 @@ span.numbers-text {
     display: block;
     max-width: 100%;
     height: auto;
-
 }
 
 .card__data {
-    width: 280px;
+    width: 250px;
     background-color: #fff;
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
@@ -828,15 +843,21 @@ span.numbers-text {
     margin-inline: auto;
     opacity: 0;
     transition: opacity 1s 1s;
+
+}
+
+.card__data:hover {
+    width: 250px;
 }
 
 .card__description {
-    display: block;
+    display: inline-block;
     font-size: .875rem;
     margin-bottom: .25rem;
 }
 
 .card__title {
+    display: inline-block;
     font-size: 1.25rem;
     font-weight: 500;
     color: hsl(0, 0%, 35%);
@@ -859,6 +880,7 @@ span.numbers-text {
     animation: show-data 1s forwards;
     opacity: 1;
     transition: opacity .3s;
+    width: 250px;
 }
 
 .card__article:hover {
@@ -871,6 +893,7 @@ span.numbers-text {
 
 .card__article:not(:hover) .card__data {
     animation: remove-data 1s forwards;
+    width: 250px;
 }
 
 /* Card animation */
@@ -939,7 +962,7 @@ span.numbers-text {
 /* For large devices */
 @media screen and (min-width: 1120px) {
     .actvity_container {
-        height: 100vh;
+        height: auto;
     }
 
     .activity_cards {
@@ -972,6 +995,7 @@ span.numbers-text {
     line-height: 1;
     padding: 3rem;
     padding-bottom: 2.5rem;
+    margin-top: 0;
 }
 
 .volunteer-subheading {
@@ -1113,16 +1137,6 @@ span.numbers-text {
 
 /* ============================= TESTIMONIALS ================================ */
 
-/* 
-    font-family: "Fuzzy Bubbles", sans-serif;
-    font-size: 60px;
-    color: #FFFFFF;
-    text-align: center;
-    line-height: 1;
-    padding: 3rem;
-    padding-bottom: 2.5rem;
-*/
-
 .section-t {
     padding: 3rem 0;
     background-color: #23A094; /* #FEFFD2 */
@@ -1262,16 +1276,18 @@ span.numbers-text {
     color: rgb(0 10 45);
 }
 
-/* Footer */
+
+/* ================================ Footer ====================================== */
 .footer-distributed {
-    box-sizing: border-box;
-    background-image:url("/images/BannerImage1.jpg") ;
+    /* box-sizing: border-box; */
+    /* background-image:url("/images/FooterImage.jpg") ;
     background-repeat: no-repeat;
-    background-size: 100% 300px;
-    width: 100%;
+    background-size: 100% 320px; */
+    /* width: 100%; */
     text-align: left;
+    background-color: #333356;
     font: bold 16px;
-    font-family: "Manrope", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     padding: 55px 50px;
 }
@@ -1292,6 +1308,14 @@ span.numbers-text {
 
 .footer-distributed .footer-left {
     width: 40%;
+}
+
+.footer-links {
+    color: #FFFFFF;
+}
+
+.links {
+    color: #FFFFFF;
 }
 
 /* The company logo */
@@ -1319,11 +1343,11 @@ span.numbers-text {
     line-height: 1.8;
     font-weight: 400;
     text-decoration: none;
-    color: inherit;
+    /* color: inherit; */
 }
 
 .footer-distributed .footer-company-name {
-    color: #222;
+    color: #FFFFFF;
     font-size: 14px;
     font-weight: normal;
     margin: 0;
@@ -1335,7 +1359,7 @@ span.numbers-text {
     width: 35%;
 }
 
-.footer-distributed .footer-center i {
+/* .footer-distributed .footer-center i {
     background-color: rgb(255, 255, 255);
     color: black;
     font-size: 25px;
@@ -1346,7 +1370,7 @@ span.numbers-text {
     line-height: 42px;
     margin: 10px 15px;
     vertical-align: middle;
-}
+} */
 
 .footer-distributed .footer-center i.fa-envelope {
     font-size: 17px;
@@ -1355,7 +1379,7 @@ span.numbers-text {
 
 .footer-distributed .footer-center p {
     display: inline-block;
-    color: black;
+    color: #FFFFFF;
     font-weight: 400;
     vertical-align: middle;
     margin: 0;
@@ -1379,7 +1403,7 @@ span.numbers-text {
     font-weight: 300;
     font-size: 20px;
     left: 0;
-    color: black;
+    color: #FFFFFF;
     display: inline-block;
     padding-right: 5px;
 }
@@ -1394,9 +1418,50 @@ span.numbers-text {
     width: 20%;
 }
 
+.footer-icons::before {
+    background-color: #BB3A8E;
+    border-radius: 50%;
+    padding: 0.7rem;
+    color: #FFFFFF;
+    margin-right: 10px;
+    /* font-size: 1.4rem; */
+}
+
+.footer-address-icon::before {
+    font-size: 1.4rem;
+    position: relative;
+    bottom: 8px;
+}
+
+.footer-phone-icon::before {
+    font-size: 1.2rem;
+    
+}
+
+.footer-mail-icon::before {
+    font-size: 1.2rem;
+    position: relative;
+    top: 5px;
+}
+
+.footer-brand-icons::before {
+    background-color: #BB3A8E;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    padding: 0.4rem;
+    margin-right: 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.company-email {
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
 .footer-distributed .footer-company-about {
     line-height: 20px;
-    color: black;
+    color: #FFFFFF;
     font-size: 13px;
     font-weight: normal;
     margin: 0;
@@ -1404,7 +1469,7 @@ span.numbers-text {
 
 .footer-distributed .footer-company-about span {
     display: block;
-    color: black;
+    color: #FFFFFF;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -1414,7 +1479,7 @@ span.numbers-text {
     margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a {
+/* .footer-distributed .footer-icons a {
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -1429,7 +1494,7 @@ span.numbers-text {
 
     margin-right: 3px;
     margin-bottom: 5px;
-}
+} */
 
 /* If you don't want the footer to be responsive, remove these media queries */
 

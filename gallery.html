@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Garad Foundation</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/png" href="/images/logo.png" sizes="16x16">
+
+    <!-- GOOGLE FONTS (MONTSERRAT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <!-- GOOGLE FONTS (MANROPE)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE FONTS (FUZZY BUBBLE)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="CSS/gallery.css">
+
+
+</head>
+<body>
+
+    
+    <!--================================== NAVBAR ==============================-->
+
+    <header class="navbar-header" id="header">
+        <nav class="nav nav-container">
+            <a href="#" class="nav__logo">
+                <img src="images/logo.png" alt="logo image">
+                <!-- Garad Foundation -->
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#3" class="nav__link">Activities</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#recently" class="nav__link">Gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#joinus" class="nav__link">Join Us</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Toggle button  -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================ Search ============================================= -->
+    <!-- <section class="search">
+        <img src="images/search-img.jpg" alt="search-img">
+        <div class="content">
+            <h1 class="gallery-heading">Image Gallery</h1>
+            <p class="gallery-subheading">Moments captured to create memories </p>
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search images">     
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ================================= CARDS SECTION ========================= -->
+     <h1 class="cards-heading">Image Gallery</h1>
+     <div class="card-container">
+
+        <div class="card">
+            <img src="images/project1.png" class="card-image" alt="Activity">
+            <div class="card-content">
+                <h3>Mission </h3>
+                <a href="project.html" class="btn">View Images</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/project1.png" class="card-image" alt="Activity">
+            <div class="card-content">
+                <h3>Mission </h3>
+                <a href="project.html" class="btn">View Images</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/project1.png" class="card-image" alt="Activity">
+            <div class="card-content">
+                <h3>Mission </h3>
+                <a href="project.html" class="btn">View Images</a>
+            </div>
+        </div>
+     </div>
+
+
+    <!-- ================================= SCROLL UP ============================= -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--================================== JS CODE ==============================-->
+
+    <script src="main.js"></script>
+</body>
+</html>
