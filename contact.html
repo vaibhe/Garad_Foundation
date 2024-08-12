@@ -5,29 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="/CSS/contact.css">
-
-    <!-- Fontawesome -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
-    <!-- Remixicons -->
-
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
+    <title>Garad Foundation - Contact Us</title>
+    
     <!-- Favicon  -->
     <link rel="icon" type="image/png" href="/images/logo.png" sizes="16x16">
+
+    <!-- GOOGLE FONTS (MONTSERRAT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <!-- GOOGLE FONTS (MANROPE)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE FONTS (FUZZY BUBBLE)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Remixicons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="/CSS/contact.css">
 </head>
 
 <body>
@@ -73,6 +82,12 @@
         </nav>
     </header>
 
+    <!-- ================================= SCROLL UP ============================= -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- ================================= Contact US Section ========================== -->
     <div class="contact_us_2">
         <div class="responsive-container-block big-container">
             <div class="blueBG">
@@ -148,43 +163,24 @@
         </div>
     </div>
 
-</body>
-
-
-<!-- <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyXBXtKjOedZRx5PO1SA0xtu-AhKzR6KzPxCVhmsyS7Yk-galqlpiqSVToNm4MpAnJm/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const success = document.getElementById("success")
-
-    form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-            .then(response => {
-
-                success.alert("Data Succesfully Submitted");
-                
-            })
-            .catch(error => console.error('Error!', error.message))
-    })
-</script> -->
-
 <script>
 
+    /*=============== SHOW MENU ===============*/
     const navMenu = document.getElementById('nav-menu');
     const navToggle = document.getElementById('nav-toggle');
     const navClose = document.getElementById('nav-close');
 
     // MENU SHOW
     // Validate if constant exists
-    if (navToggle) {
-        navToggle.addEventListener('click', () => {
+    if(navToggle){
+        navToggle.addEventListener('click', () =>{
             navMenu.classList.add('show-menu')
         })
     }
 
     // MENU HIDDEN
     // Validate if constant exists
-    if (navClose) {
+    if(navClose){
         navClose.addEventListener('click', () => {
             navMenu.classList.remove('show-menu')
         })
@@ -193,21 +189,32 @@
     /*=============== REMOVE MENU MOBILE ===============*/
     const navLink = document.querySelectorAll('.nav__link')
 
-    const linkAction = () => {
+    const linkAction = () =>{
         const navMenu = document.getElementById('nav-menu')
         // When we click on each nav__link, we remove the show-menu class
         navMenu.classList.remove('show-menu')
     }
     navLink.forEach(n => n.addEventListener('click', linkAction))
 
+    /*=============== CHANGE BACKGROUND HEADER ===============*/
+    const scrollHeader = () =>{
+        const header = document.getElementById('header')
+        // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+        this.scrollY >= 50 ? header.classList.add('bg-header')
+                        : header.classList.remove('bg-header')
+    }
+    window.addEventListener('scroll', scrollHeader)
 
+    /* ============================ SHOW SCROLL UP ======================= */
+    const scrollUp = () =>{
+        const scrollUp = document.getElementById('scroll-up')
+        // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup
+        this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                                                : scrollUp.classList.remove('show-scroll')
+    }
+    window.addEventListener('scroll', scrollUp)
 
-
-
-
-
-
-
+    /* ============================ CONTACT SECTION ======================= */
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyXBXtKjOedZRx5PO1SA0xtu-AhKzR6KzPxCVhmsyS7Yk-galqlpiqSVToNm4MpAnJm/exec'
     const form = document.forms['submit-to-google-sheet']
     const success = document.getElementById("success")

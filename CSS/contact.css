@@ -1,3 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    /* box-sizing: border-box; */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+    color: hsl(19, 16%, 35%);
+    /* background-color: #FE8F50; */
+    /* hsl(19, 100%, 96%)  */
+    transition: background 0.4s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -7,7 +30,7 @@ ul {
     list-style: none;
 }
 
-
+/* =========================== NAVBAR ========================== */
 
 .navbar-header {
     background-color: #FFFFFF;
@@ -164,10 +187,49 @@ ul {
     top: 0;
 }
 
-/* -----contact------ */
+/* ================================ SCROLL BAR =========================== */
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(19, 8%, 75%);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: hsl(19, 8%, 65%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(19, 8%, 55%);
+}
+
+/* =============================== SCROLL UP ============================= */
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    background-color: hsl(19, 100%, 97%);
+    box-shadow: 0 4px 12px hsla(19, 64%, 24%, .1);
+    display: inline-flex;
+    padding: .35rem;
+    border-radius: .25rem;
+    font-size: 1.5rem;
+    color: hsl(19, 64%, 54%);
+    z-index: 10;
+    transition: bottom .3s, transform .3s, background .4s;
+}
+
+.scrollup:hover {
+    transform: translateY(-.25rem);
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+    bottom: 3rem;
+}
 
 
-
+/* ======================================== CONTACT SECTION ================================== */
 
 .contact_us_2 * {
     font-family: Nunito, sans-serif;
@@ -401,9 +463,6 @@ img:hover {
     margin-left: auto;
 }
 
-
-
-
 .contact_us_2 .social-media-links {
     width: 250px;
     display: flex;
@@ -510,14 +569,6 @@ i:hover {
 }
 
 @media (max-width: 500px) {
-
-    
-
-
-
-
-
-
 
     .contact_us_2 .container-block.form-wrapper {
         padding-top: 50px;
