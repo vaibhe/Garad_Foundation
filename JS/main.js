@@ -1,4 +1,4 @@
-// Dynamic Numbers
+/* ============================== DYNAMIC NUMBERS ================================ */
 let valueDisplays = document.querySelectorAll(".numbers-num");
 let interval = 5000;
 
@@ -15,7 +15,7 @@ valueDisplays.forEach((valueDisplay) => {
     }, duration);
 });
 
-/*=============== SHOW MENU ===============*/
+/*============================== SHOW MENU =================================*/
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
@@ -64,28 +64,6 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]')
-
-const scrollActive = () =>{
-    const scrollY = window.scrollY
-
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id'),
-              sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')  
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            sectionsClass.classList.add('active-link')
-        }else{
-            sectionsClass.classList.remove('active-link')
-        }      
-    })
-}
-window.addEventListener('scroll', scrollActive)
-
-
 /* ============================ Banner ============================= */
 let bannerlist = document.querySelector('.banner-slider .banner-list');
 let banneritems = document.querySelectorAll('.banner-slider .banner-list .banner-item');
@@ -133,5 +111,3 @@ bannerdots.forEach((li, key) => {
         reloadBannerSlider();
     })
 })
-
-// footer image (1440*1009)

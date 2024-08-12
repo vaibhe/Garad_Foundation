@@ -86,7 +86,7 @@ img {
 /* =========================== NAVBAR ========================== */
 
 .navbar-header {
-    background-color: #FFFFFF;
+    background-color: hsl(19, 100%, 96%);
     /* hsl(19, 100%, 96%) */
     width: 100%;
     position: fixed;
