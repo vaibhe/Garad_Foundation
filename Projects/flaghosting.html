@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Garad Foundation</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/png" href="/images/logo.png" sizes="16x16">
+
+    <!-- GOOGLE FONTS (MONTSERRAT)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <!-- GOOGLE FONTS (LOBSTER)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lobster&family=Rubik+Doodle+Shadow&display=swap"
+        rel="stylesheet">
+
+    <!-- GOOGLE FONTS (MANROPE)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- GOOGLE FONTS (FUZZY BUBBLE)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Swiper JS (Testimonials) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- REMIXICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+
+    <!-- ICONSCOUT -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"> 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="/CSS/project.css">
+</head>
+<body>
+
+    <!--================================== NAVBAR ==============================-->
+    <header class="navbar-header" id="header">
+        <nav class="nav nav-container">
+            <a href="#" class="nav__logo">
+                <img src="/images/logo.png" alt="logo image">
+                <!-- Garad Foundation -->
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="/index.html" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/about.html" class="nav__link">About us</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#3" class="nav__link">Activities</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/gallery.html" class="nav__link">Gallery</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#joinus" class="nav__link">Join Us</a>
+                    </li>
+                </ul>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+                <!-- Toggle button  -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================ Lightbox ============================================= -->
+    <div class="lightbox">
+        <div class="wrapper">
+            <header>
+                <div class="photographer">
+                    <i class="uil uil-camera"></i>
+                    <span></span>
+                </div>
+                <div class="buttons">
+                    <i class="uil uil-import"></i>
+                    <i class="uil uil-times"></i>
+                </div>
+            </header>
+            <div class="preview-img">
+                <div class="img"><img src="" alt="preview-img"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================== Gallery ============================================= -->
+     <section class="gallery">
+        <ul class="images">
+            <li class="card" onclick="showLightbox('/images/Flag hosting/20230815_092036.jpg')">
+                <img src="/images/Flag hosting/20230815_092036.jpg" alt="img">
+                <div class="details">
+                    <div class="photographer">
+                        <i class="uil uil-camera"></i>
+                        <span></span>
+                    </div>
+                    <button onclick="downloadImg('/images/Flag hosting/20230815_092036.jpg');event.stopPropagation();">
+                        <i class="uil uil-import"></i>
+                    </button>
+                </div>
+            </li>
+
+            <li class="card" onclick="showLightbox('/images/Flag hosting/20230815_092046.jpg')">
+                <img src="/images/Flag hosting/20230815_092046.jpg" alt="img">
+                <div class="details">
+                    <div class="photographer">
+                        <i class="uil uil-camera"></i>
+                        <span></span>
+                    </div>
+                    <button onclick="downloadImg('/images/Flag hosting/20230815_092046.jpg');event.stopPropagation();">
+                        <i class="uil uil-import"></i>
+                    </button>
+                </div>
+            </li>
+
+            <li class="card" onclick="showLightbox('/images/Flag hosting/20230815_092441.jpg')">
+                <img src="/images/Flag hosting/20230815_092441.jpg" alt="img">
+                <div class="details">
+                    <div class="photographer">
+                        <i class="uil uil-camera"></i>
+                        <span></span>
+                    </div>
+                    <button onclick="downloadImg('/images/Flag hosting/20230815_092441.jpg');event.stopPropagation();">
+                        <i class="uil uil-import"></i>
+                    </button>
+                </div>
+            </li>
+
+            <li class="card" onclick="showLightbox('/images/Flag hosting/20230815_104534.jpg')">
+                <img src="/images/Flag hosting/20230815_104534.jpg" alt="img">
+                <div class="details">
+                    <div class="photographer">
+                        <i class="uil uil-camera"></i>
+                        <span></span>
+                    </div>
+                    <button onclick="downloadImg('/images/Flag hosting/20230815_104534.jpg');event.stopPropagation();">
+                        <i class="uil uil-import"></i>
+                    </button>
+                </div>
+            </li>
+
+            <li class="card" onclick="showLightbox('/images/Flag hosting/20230815_105648.jpg')">
+                <img src="/images/Flag hosting/20230815_105648.jpg" alt="img">
+                <div class="details">
+                    <div class="photographer">
+                        <i class="uil uil-camera"></i>
+                        <span></span>
+                    </div>
+                    <button onclick="downloadImg('/images/Flag hosting/20230815_105648.jpg');event.stopPropagation();">
+                        <i class="uil uil-import"></i>
+                    </button>
+                </div>
+            </li>
+
+            <li class="card" onclick="showLightbox('/images/Flag hosting/20230815_110734.jpg')">
+                <img src="/images/Flag hosting/20230815_110734.jpg" alt="img">
+                <div class="details">
+                    <div class="photographer">
+                        <i class="uil uil-camera"></i>
+                        <span></span>
+                    </div>
+                    <button onclick="downloadImg('/images/Flag hosting/20230815_110734.jpg');event.stopPropagation();">
+                        <i class="uil uil-import"></i>
+                    </button>
+                </div>
+            </li>
+
+            <li class="card" onclick="showLightbox('/images/Flag hosting/20230815_153210.jpg')">
+                <img src="/images/Flag hosting/20230815_153210.jpg" alt="img">
+                <div class="details">
+                    <div class="photographer">
+                        <i class="uil uil-camera"></i>
+                        <span></span>
+                    </div>
+                    <button onclick="downloadImg('/images/Flag hosting/20230815_153210.jpg');event.stopPropagation();">
+                        <i class="uil uil-import"></i>
+                    </button>
+                </div>
+            </li>
+
+            <li class="card" onclick="showLightbox('/images/Flag hosting/IMG-20230815-WA0031.jpg')">
+                <img src="/images/Flag hosting/IMG-20230815-WA0031.jpg" alt="img">
+                <div class="details">
+                    <div class="photographer">
+                        <i class="uil uil-camera"></i>
+                        <span></span>
+                    </div>
+                    <button onclick="downloadImg('/images/Flag hosting/IMG-20230815-WA0031.jpg');event.stopPropagation();">
+                        <i class="uil uil-import"></i>
+                    </button>
+                </div>
+            </li>
+
+            <li class="card" onclick="showLightbox('/images/Flag hosting/20230815_110317.jpg')">
+                <img src="/images/Flag hosting/20230815_110317.jpg" alt="img">
+                <div class="details">
+                    <div class="photographer">
+                        <i class="uil uil-camera"></i>
+                        <span></span>
+                    </div>
+                    <button onclick="downloadImg('/images/Flag hosting/20230815_110317.jpg');event.stopPropagation();">
+                        <i class="uil uil-import"></i>
+                    </button>
+                </div>
+            </li>
+
+            <li class="card" onclick="showLightbox('/images/Flag hosting/IMG-20230815-WA0038.jpg')">
+                <img src="/images/Flag hosting/IMG-20230815-WA0038.jpg" alt="img">
+                <div class="details">
+                    <div class="photographer">
+                        <i class="uil uil-camera"></i>
+                        <span></span>
+                    </div>
+                    <button onclick="downloadImg('/images/Flag hosting/IMG-20230815-WA0038.jpg'); event.stopPropagation();">
+                        <i class="uil uil-import"></i>
+                    </button>
+                </div>
+            </li>
+
+            <li class="card" onclick="showLightbox('/images/Flag hosting/FB_IMG_1723442916742.jpg')">
+                <img src="/images/Flag hosting/FB_IMG_1723442916742.jpg" alt="img">
+                <div class="details">
+                    <div class="photographer">
+                        <i class="uil uil-camera"></i>
+                        <span></span>
+                    </div>
+                    <button onclick="downloadImg('/images/Flag hosting/FB_IMG_1723442916742.jpg'); event.stopPropagation();">
+                        <i class="uil uil-import"></i>
+                    </button>
+                </div>
+            </li>
+
+        </ul>
+     </section>
+
+    <!-- ================================= SCROLL UP ============================= -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+
+    <!-- ============================================ Footer =============================================-->
+    <!-- <footer class="footer-distributed">
+
+
+        <div class="footer-left">
+
+
+            <div class="footer-logo"><img src="images/logo.png"></div>
+
+
+            <p class="footer-links">
+                <a href="#" class="link-1">Home</a>
+
+                <a href="#">Blog</a>
+
+                <a href="#">Pricing</a>
+
+                <a href="#">About</a>
+
+                <a href="#">Faq</a>
+
+                <a href="#">Contact</a>
+            </p>
+
+            <p class="footer-company-name">Garad Foundation© 2018</p>
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <p><span>B/307,Omdeep Saipooja soc.Above Koshti </span>hospital, Dr. Lazarus Road,Beside charai
+                    <span> signal, Thane (w), Maharashtra 400601</span>
+
+                </p>
+
+
+            </div>
+
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <p>+919321468652</p>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-envelope"></i>
+                <p><a href="mailto:garadfoundation@gmail.com">garadfoundation@gmail.com</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+
+            </div>
+
+        </div>
+
+    </footer> -->
+
+    <!--================================== JS CODE ==============================-->
+    <script src="/JS/project.js" defer></script>
+
+</body>
+</html>
