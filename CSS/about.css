@@ -1,0 +1,603 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* overflow: hidden; */
+  transition: 0.5s;
+  
+}
+
+/* body{
+  background-color: rgb(161, 221, 221);
+} */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+
+.navbar-header {
+  background-color: #FFFFFF;
+  /* hsl(19, 100%, 96%) */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: box-shadow .3s, background .4s;
+}
+
+.nav-container {
+  max-width: 1024px;
+  margin-inline: 1.5rem;
+}
+
+.nav {
+  position: relative;
+  height: 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo,
+.nav__toggle,
+.nav__close {
+  display: flex;
+  color: hsl(19, 16%, 15%);
+}
+
+.nav__logo {
+  align-items: center;
+  column-gap: .5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color .3s;
+}
+
+.nav__logo img {
+  width: 60px;
+}
+
+.nav__logo:hover {
+  color: hsl(19, 64%, 54%);
+}
+
+.nav__toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.nav__menu,
+.bg-header {
+  box-shadow: 0 2px 8px hsla(19, 64%, 4%, .5);
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 2rem;
+}
+
+.nav__link {
+  color: hsl(19, 16%, 15%);
+  font-weight: 500;
+  transition: color .4s;
+}
+
+.nav__link:hover {
+  color: hsl(19, 64%, 54%);
+}
+
+.nav__close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      background-color: hsl(19, 100%, 96%);
+      width: 100%;
+      box-shadow: 0 8px 20px hsla(19, 64%, 24%, .1);
+      padding-block: 3.5rem;
+      transition: top .4s;
+  }
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px) {
+  .nav-container {
+      margin-inline: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 767px) {
+  .nav {
+      column-gap: 3rem;
+  }
+
+  .nav__toggle,
+  .nav__close {
+      display: none;
+  }
+
+  .nav__list {
+      flex-direction: row;
+      column-gap: 3rem;
+  }
+
+  .nav__menu {
+      margin-left: auto;
+      box-shadow: none;
+  }
+
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px) {
+  .nav {
+      height: calc(3.5rem + 1.5rem);
+  }
+}
+
+@media screen and (min-width: 1064px) {
+  .nav-container {
+      margin-inline: auto;
+  }
+}
+
+/* Change background header */
+.bg-header {
+  box-shadow: 0 2px 8px hsla(19, 64%, 24%, .1);
+}
+
+/* Active link */
+.active-link {
+  color: hsl(19, 64%, 54%);
+}
+
+/* Show menu */
+.show-menu {
+  top: 0;
+}
+
+
+/* --------About----- */
+
+.about_container {
+  display: flex;
+  flex-direction: row-reverse;
+ background-color: rgb(161, 221, 221);
+}
+
+.about_btn {
+  display: inline-block;
+  background-color: rgb(255, 223, 94);
+  color: rgb(51, 51, 86);
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  border-radius: 13px;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.about_image {
+  padding: 6rem;
+  background-color: rgb(161, 221, 221);
+}
+
+.about_image img {
+  width: 27rem;
+  border-radius: 6%;
+}
+
+
+
+.about_data {
+  padding: 8rem;
+}
+
+.about_data h1 {
+
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-size: 80px;
+  color: rgb(51, 51, 86);
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+
+
+.about_data p {
+
+  padding-top: 3rem;
+  /* padding: 6rem; */
+  color: #BB3A8E;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  font-style: normal;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .about_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_image,
+  .about_data {
+    padding: 4rem;
+  }
+
+  .about_image img {
+    width: 22rem;
+  }
+
+  .about_data h1 {
+    font-size: 60px;
+  }
+
+  .about_data p {
+    font-size: 22px;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+
+  .about_image,
+  .about_data {
+    padding: 2rem;
+  }
+
+  .about_image img {
+    width: 18rem;
+  }
+
+  .about_data h1 {
+    font-size: 50px;
+  }
+
+  .about_data p {
+    font-size: 20px;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .about_btn {
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .about_image img {
+    width: 100%;
+  }
+
+  .about_data h1 {
+    font-size: 40px;
+  }
+
+  .about_data p {
+    padding: 2px;
+    font-size: 18px;
+  }
+}
+
+/* ===== Garad Data ====== */
+
+.parent-1,  .parent-2{
+  
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.parent-1 h1,h2 , .parent-2 h1,h2  {
+  
+    margin: 0;
+    padding: 20px;
+   
+}
+
+.parent-1 h1,.parent-2 h1{
+  
+    font-size: 36px;
+    text-align: center;
+  
+}
+
+
+
+.child{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.child p{
+
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  
+}
+
+.child h2{
+  font-size: 24px;
+}
+
+.garad{
+  background-color: #BB3A8E;
+}
+
+
+
+
+
+
+/* ===== Members ======== */
+
+/* h1 {
+  text-align: center;
+  color: #222;
+  padding-top: 20px;
+} */
+
+
+.members {
+  background-color: #fff;
+  
+}
+
+/* .container {
+
+  width: 1200px;
+  height: 100%;
+  margin: auto;
+  background-color: pink;
+
+}
+
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background: transparent;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 70px;
+  position: relative;
+  float: left;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px 1px #9592927a;
+}
+
+.bg {
+  width: 90%;
+  transform: rotate(90deg);
+  margin-left: 20px;
+}
+
+.one {
+  width: 90%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card:hover .bg {
+  transform: rotate(120deg);
+}
+
+.card h3 {
+  text-align: center;
+  margin-top: 25px;
+  color: #222;
+  cursor: pointer;
+}
+
+.card h4 {
+  text-align: center;
+  color: grey;
+  font-weight: 500;
+}
+
+.icon {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icon ion-icon {
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  background: #ffc400;
+  color: #fff;
+  border: 1px solid #ffc400;
+  opacity: 0;
+}
+
+.icon ion-icon:hover {
+  color: grey;
+  border: 1px solid grey;
+  background: transparent;
+}
+
+.card:hover .icon ion-icon {
+  opacity: 1;
+} */
+
+/* General container styling */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto;
+  background-color: pink;
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards */
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+  background: transparent;
+  border-radius: 10px;
+  margin: 20px; /* Adjust margins for better spacing */
+  position: relative;
+  float: none; /* Remove float */
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px 1px #9592927a;
+}
+
+.bg {
+  width: 90%;
+  transform: rotate(90deg);
+  margin-left: 20px;
+}
+
+.one {
+  width: 90%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card:hover .bg {
+  transform: rotate(120deg);
+}
+
+.card h3 {
+  text-align: center;
+  margin-top: 25px;
+  color: #222;
+  cursor: pointer;
+}
+
+.card h4 {
+  text-align: center;
+  color: grey;
+  font-weight: 500;
+}
+
+.icon {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icon ion-icon {
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  background: #ffc400;
+  color: #fff;
+  border: 1px solid #ffc400;
+  opacity: 0;
+}
+
+.icon ion-icon:hover {
+  color: grey;
+  border: 1px solid grey;
+  background: transparent;
+}
+
+.card:hover .icon ion-icon {
+  opacity: 1;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bg, .one {
+    width: 85%;
+  }
+
+  .card h3 {
+    font-size: 1.4rem;
+  }
+
+  .card h4 {
+    font-size: 1.1rem;
+  }
+
+  .icon ion-icon {
+    font-size: 18px;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bg, .one {
+    width: 80%;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card h4 {
+    font-size: 1rem;
+  }
+
+  .icon ion-icon {
+    font-size: 16px;
+  }
+}
