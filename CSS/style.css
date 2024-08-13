@@ -528,6 +528,8 @@ img {
 .object-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+   
+   
 }
 
 .object-container > div:hover {
@@ -608,18 +610,34 @@ img {
     font-weight: 800;
     text-align: left;
 }
-
+/* 
 .object-container3 {
+    text-align: center;
     margin-top: 82px;
-    margin-left: 50px;
+   
+   
     margin-bottom: 90px;
-    width: 80%;
-    height: 12rem;
+    width: 40%;
+    height: 13rem;
     padding: 2rem;
     background-color: hsl(19, 100%, 96%);
     border-radius: 25px; 
-    /* box-shadow: 15px 10px 6px 0 gray; */
+    box-shadow: 15px 10px 6px 0 gray;
   
+} */
+
+.object-container3 {
+    grid-column: span 2; /* Make it span both columns to center it */
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Same width as the other containers */
+    height: 13rem; /* Same height as the other containers */
+    padding: 2rem;
+    background-color: hsl(19, 100%, 96%);
+    border-radius: 25px;
+    margin-top: 0; /* Remove extra top margin */
+    margin-bottom: 90px;
+    text-align: center;
 }
 
 

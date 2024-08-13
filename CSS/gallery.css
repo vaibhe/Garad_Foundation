@@ -14,7 +14,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
     color: hsl(19, 16%, 35%);
-    background-color: #9DDE8B;
+    
+    /* background-color: #AAF3F3; */
+    background-color: #23A094;
     /* hsl(19, 100%, 96%)  */
     transition: background 0.4s;
 }
@@ -373,13 +375,13 @@ input, button, i {
 .card {
     width: 325px;
     height: 350px;
-    background-color: #23A094;
+    background-color:#04270C;
     border-radius: 8px;
     text-align: center;
     overflow: hidden;
     margin: 20px;
     margin-right: 5rem;
-    box-shadow: 15px 10px 6px 0 rgb(149, 197, 76);
+    /* box-shadow: 15px 10px 6px 0 rgb(149, 197, 76); */
 }
 
 .card img{
