@@ -3,21 +3,39 @@
 
 <head>
    <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About Us - Garad Foundation</title>
+
+   <!--=============== Favicons ===============-->
+   <link rel="icon" type="image/png" href="/images/logo.png" sizes="16x16">
+
+   <!-- GOOGLE FONTS (MONTSERRAT) -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Sacramento&display=swap"
+       rel="stylesheet">
+
+   <!-- GOOGLE FONTS (MANROPE)-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+   <!-- GOOGLE FONTS (FUZZY BUBBLE)-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-
-   <!--=============== Favicons ===============-->
-   <link rel="icon" type="image/png" href="/images/logo.png" sizes="16x16">
-
    <!--=============== Remixicons ===============-->
-
    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
+   <!--=============== Font Awesome =============-->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
       integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
       crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -25,64 +43,73 @@
    <!--=============== CSS ===============-->
    <link rel="stylesheet" href="/CSS/about.css">
 
-   <title>About Us</title>
 </head>
 
 <body>
 
+<!--================================== NAVBAR ==============================-->
 
-   <header class="navbar-header" id="header">
-      <nav class="nav nav-container">
-         <a href="#" class="nav__logo">
-            <img src="/images/logo.png" alt="logo image">
-            <!-- Garad Foundation -->
-         </a>
+      <header class="navbar-header" id="header">
+         <nav class="nav nav-container">
+            <a href="index.html" class="nav__logo">
+               <img src="images/logo.png" alt="logo image">
+               <!-- Garad Foundation -->
+            </a>
 
-         <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-               <li class="nav__item">
-                  <a href="index.html" class="nav__link active-link">Home</a>
-               </li>
-               <li class="nav__item">
-                  <a href="#about" class="nav__link">About us</a>
-               </li>
-               <li class="nav__item">
-                  <a href="#3" class="nav__link">Activities</a>
-               </li>
-               <li class="nav__item">
-                  <a href="gallery.html" class="nav__link">Gallery</a>
-               </li>
-               <li class="nav__item">
-                  <a href="#joinus" class="nav__link">Join Us</a>
-               </li>
-               <li class="nav__item">
-                  <a href="contact.html" class="nav__link">Contact Us</a>
-               </li>
-              
-            </ul>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                     <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                     </li>
+                     <li class="nav__item">
+                        <a href="about.html" class="nav__link">About us</a>
+                     </li>
+                     <li class="nav__item">
+                        <a href="#3" class="nav__link">Activities</a>
+                     </li>
+                     <li class="nav__item">
+                        <a href="gallery.html" class="nav__link">Gallery</a>
+                     </li>
+                     <li class="nav__item dropdown">
+                        <button class="dropbtn">Contact &nbsp;
+                           <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                           <a href="#joinus" class="nav__link">Join Us</a>
+                           <a href="contact.html" class="nav__link">Contact Us</a>
+                        </div>
+                     </li>
+                     <!-- <li class="nav__item">
+                     </li> -->
+               </ul>
 
-            <!-- Close button -->
-            <div class="nav__close" id="nav-close">
-               <i class="ri-close-line"></i>
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                     <i class="ri-close-line"></i>
+               </div>
             </div>
-         </div>
 
-         <div class="nav__buttons">
-            <!-- Toggle button  -->
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-line"></i>
+            <div class="nav__buttons">
+               <!-- Toggle button  -->
+               <div class="nav__toggle" id="nav-toggle">
+                     <i class="ri-menu-line"></i>
+               </div>
             </div>
-         </div>
-      </nav>
-   </header>
+         </nav>
+      </header>
+
+   <!-- ================================= SCROLL UP ============================= -->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
 
 
-
+   <!-- ============== About Section ====================== -->
    <section class="about">
       <div class="about_container">
 
          <div class="about_data">
-            <a class="about_btn">Aboutus</a>
+            <a class="about_btn">About Us</a>
             <h1>About Garad</h1>
             <p>Garad Foundation is a registered non-governmental organization based in Thane. We believe in the
                boundless
@@ -99,7 +126,7 @@
    </section>
 
 
-   <!-- What We do  -->
+   <!--================= What We do  =========================-->
 
    <section class="garad">
 
@@ -148,7 +175,7 @@
 
 
 
-
+   <!-- ================================ Members Section =========================== -->
    <section class="members">
       <header>
          <h1 style="text-align: center;">Our Team</h1>
@@ -286,24 +313,24 @@
    </section>
 
 
-</body>
 
-<script>
+   <script>
+      /*============================== SHOW MENU =================================*/
    const navMenu = document.getElementById('nav-menu');
    const navToggle = document.getElementById('nav-toggle');
    const navClose = document.getElementById('nav-close');
 
    // MENU SHOW
    // Validate if constant exists
-   if (navToggle) {
-      navToggle.addEventListener('click', () => {
+   if(navToggle){
+      navToggle.addEventListener('click', () =>{
          navMenu.classList.add('show-menu')
       })
    }
 
    // MENU HIDDEN
    // Validate if constant exists
-   if (navClose) {
+   if(navClose){
       navClose.addEventListener('click', () => {
          navMenu.classList.remove('show-menu')
       })
@@ -312,13 +339,32 @@
    /*=============== REMOVE MENU MOBILE ===============*/
    const navLink = document.querySelectorAll('.nav__link')
 
-   const linkAction = () => {
+   const linkAction = () =>{
       const navMenu = document.getElementById('nav-menu')
       // When we click on each nav__link, we remove the show-menu class
       navMenu.classList.remove('show-menu')
    }
    navLink.forEach(n => n.addEventListener('click', linkAction))
 
-</script>
+   /*=============== CHANGE BACKGROUND HEADER ===============*/
+   const scrollHeader = () =>{
+      const header = document.getElementById('header')
+      // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+      this.scrollY >= 50 ? header.classList.add('bg-header')
+                        : header.classList.remove('bg-header')
+   }
+   window.addEventListener('scroll', scrollHeader)
 
+   /* ============================ SHOW SCROLL UP ======================= */
+   const scrollUp = () =>{
+      const scrollUp = document.getElementById('scroll-up')
+      // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup
+         this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                                                : scrollUp.classList.remove('show-scroll')
+   }
+   window.addEventListener('scroll', scrollUp)
+
+   </script>
+
+</body>
 </html>
