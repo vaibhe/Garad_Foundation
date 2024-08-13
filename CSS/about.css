@@ -1,14 +1,22 @@
 * {
   padding: 0;
   margin: 0;
-  /* overflow: hidden; */
-  transition: 0.5s;
-  
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
-/* body{
-  background-color: rgb(161, 221, 221);
-} */
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* line-height: 1.7; */
+  background-color: #FE8F50;
+  transition: background 0.4s;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 a {
   color: black;
@@ -19,7 +27,7 @@ ul {
   list-style: none;
 }
 
-
+/* =========================== NAVBAR ========================== */
 
 .navbar-header {
   background-color: #FFFFFF;
@@ -176,8 +184,101 @@ ul {
   top: 0;
 }
 
+/* Dropdown Container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
 
-/* --------About----- */
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: hsl(19, 16%, 15%);
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  /* font-family: inherit; */ /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ================================ SCROLL BAR =========================== */
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(19, 8%, 75%);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: hsl(19, 8%, 65%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(19, 8%, 55%);
+}
+
+/* =============================== SCROLL UP ============================= */
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: hsl(19, 100%, 97%);
+  box-shadow: 0 4px 12px hsla(19, 64%, 24%, .1);
+  display: inline-flex;
+  padding: .35rem;
+  border-radius: .25rem;
+  font-size: 1.5rem;
+  color: hsl(19, 64%, 54%);
+  z-index: 10;
+  transition: bottom .3s, transform .3s, background .4s;
+}
+
+.scrollup:hover {
+  transform: translateY(-.25rem);
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 3rem;
+}
+
+
+/* ============================= ABOUT SECTION ============================ */
 
 .about_container {
   display: flex;

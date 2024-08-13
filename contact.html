@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garad Foundation - Contact Us</title>
+    <title>Contact Us - Garad Foundation</title>
     
     <!-- Favicon  -->
     <link rel="icon" type="image/png" href="/images/logo.png" sizes="16x16">
@@ -43,7 +43,7 @@
 
     <header class="navbar-header" id="header">
         <nav class="nav nav-container">
-            <a href="#" class="nav__logo">
+            <a href="index.html" class="nav__logo">
                 <img src="/images/logo.png" alt="logo image">
                 <!-- Garad Foundation -->
             </a>
@@ -144,7 +144,7 @@
                                 </label>
                             </div>
                         </div>
-                        <button class="submit-btn">
+                        <button class="submit-btn" id="submit-button">
                             Submit
                         </button>
                     </div>
@@ -163,6 +163,7 @@
         </div>
     </div>
 
+        <!-- ============================== JS CODE =============================== -->
         <script>
         
             /*=============== SHOW MENU ===============*/
@@ -218,6 +219,7 @@
             const scriptURL = 'https://script.google.com/macros/s/AKfycbyXBXtKjOedZRx5PO1SA0xtu-AhKzR6KzPxCVhmsyS7Yk-galqlpiqSVToNm4MpAnJm/exec'
             const form = document.forms['submit-to-google-sheet']
             const success = document.getElementById("success")
+            const submitButton = document.getElementById("submit-button");
         
             form.addEventListener('submit', e => {
                 e.preventDefault();
@@ -226,17 +228,24 @@
                 if (!validateForm()) {
                     return; // If validation fails, stop the form submission
                 }
+
+                // Change the button text to 'Submitting...'
+                submitButton.textContent = "Submitting Response...";
         
                 fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                     .then(response => {
                         success.style.display = "block"; // Show the success message
                         form.reset();
+                        submitButton.textContent = "Submit"; // Revert the button text to 'Submit'
                         setTimeout(() => {
                             success.style.display = "none"; // Hide the message after 3 seconds
                         }, 3000);
                     })
-                    .catch(error => console.error('Error!', error.message));
-            })
+                    .catch(error => {
+                        console.error('Error!', error.message);
+                        submitButton.textContent = "Submit"; // Revert the button text even if there's an error
+                    });
+            });
         
         
             function validatePhoneNumber() {

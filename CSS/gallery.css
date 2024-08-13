@@ -377,7 +377,6 @@ input, button, i {
     border-radius: 8px;
     text-align: center;
     overflow: hidden;
-    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
     margin: 20px;
     margin-right: 5rem;
     box-shadow: 15px 10px 6px 0 rgb(149, 197, 76);
