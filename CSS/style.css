@@ -554,7 +554,7 @@ img {
     /* margin: 150px; */
     margin-left: 50px;
     width: 80%;
-    height: 19rem;
+    height: 13rem;
     padding: 2rem;
     background-color: hsl(19, 100%, 96%);
     border-radius: 25px;
@@ -574,6 +574,7 @@ img {
     font-family: "Manrope", sans-serif;
     font-size: 32px;
     font-weight: 800;
+    padding-top: 3.5rem;
     text-align: left;
 }
 
@@ -588,7 +589,7 @@ img {
     margin-top: 82px;
     margin-left: 50px;
     width: 80%;
-    height: 19rem;
+    height: 13rem;
     padding: 2rem;
     background-color: hsl(19, 100%, 96%);
     border-radius: 25px;
@@ -604,6 +605,7 @@ img {
     /* margin-top: 3rem; */
     font-family: "Manrope", sans-serif;
     font-size: 32px;
+    padding-top: 3.5rem;
     font-weight: 800;
     text-align: left;
 }
@@ -613,7 +615,7 @@ img {
     margin-left: 50px;
     margin-bottom: 90px;
     width: 80%;
-    height: 19rem;
+    height: 12rem;
     padding: 2rem;
     background-color: hsl(19, 100%, 96%);
     border-radius: 25px; 
@@ -640,7 +642,7 @@ img {
     font-size: 32px;
     font-weight: 800;
     text-align: left;
-    /* padding-top: 2rem; */
+    padding-top: 3.5rem;
 }
 
 .objective-img4 {
@@ -654,7 +656,7 @@ img {
     margin-top: 82px;
     margin-left: 50px;
     width: 80%;
-    height: 19rem;
+    height: 12rem;
     padding: 2rem;
     background-color: hsl(19, 100%, 96%);
     border-radius: 25px;
@@ -670,6 +672,7 @@ img {
     /* margin-top: 3rem; */
     font-family: "Manrope", sans-serif;
     font-size: 32px;
+    padding-top: 3.5rem;
     font-weight: 800;
     text-align: left;
 }

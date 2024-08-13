@@ -198,12 +198,14 @@ ul {
 }
 
 .about_image {
-  padding: 6rem;
+  padding-top: 9rem;
+  padding-left: 4rem;
+  /* padding: 6rem; */
   background-color: rgb(161, 221, 221);
 }
 
 .about_image img {
-  width: 27rem;
+  width: 22rem;
   border-radius: 6%;
 }
 
