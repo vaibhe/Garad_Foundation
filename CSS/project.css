@@ -26,11 +26,15 @@ h5 {
 }
 
 h1 {
-    font-size: 2.4rem;
+
     text-align: center;
-    margin-top: 4rem;
-    font-weight: 700;
-    color: orangered;
+    margin-top: 3rem;
+    font-family: "Fuzzy Bubbles", sans-serif;
+    font-size: 60px;
+    color: #2D0336;
+    line-height: 1;
+    text-align: center;
+
 }
 
 h2 {
@@ -299,7 +303,7 @@ img {
     justify-content: space-between;
     padding: 15px 20px;
     transition: bottom 0.1s ease;
-    background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
 }
 
 .images .card:hover .details {
@@ -320,6 +324,8 @@ img {
 .details .photographer span {
     font-size: 1.05rem;
 }
+
+
 
 .card .details button {
     cursor: pointer;
@@ -346,7 +352,9 @@ img {
     pointer-events: none;
 }
 
-input, button, i {
+input,
+button,
+i {
     outline: none;
     border: none;
     border-radius: 5px;
@@ -360,7 +368,7 @@ input, button, i {
     width: 100%;
     height: 100%;
     display: none;
-    background: rgba(0,0,0,0.65);
+    background: rgba(0, 0, 0, 0.65);
 }
 
 .lightbox.show {

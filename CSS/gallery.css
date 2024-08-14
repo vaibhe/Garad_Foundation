@@ -396,10 +396,10 @@ input, button, i {
 }
 
 .card-content h3{
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin-top: 10px;
     margin-bottom: 8px;
-    color: #FFFFFF;
+    color: #ffff;
 }
 
 .card-content .btn{
