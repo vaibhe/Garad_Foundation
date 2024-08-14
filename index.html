@@ -27,6 +27,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- GOOGLE FONTS (JOST)-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;700&display=swap" rel="stylesheet">
+
     <!-- Swiper JS (Testimonials) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -50,8 +55,8 @@
 
     <!--================================== NAVBAR ==============================-->
 
-    <header class="navbar-header" id="header">
-        <nav class="nav nav-container">
+        <header class="navbar-header" id="header">
+            <nav class="nav nav-container">
             <a href="index.html" class="nav__logo">
                 <img src="images/logo.png" alt="logo image">
                 <!-- Garad Foundation -->
@@ -59,53 +64,52 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item">
+                        <li class="nav__item">
                         <a href="index.html" class="nav__link active-link">Home</a>
-                    </li>
-                    <li class="nav__item">
+                        </li>
+                        <li class="nav__item">
                         <a href="about.html" class="nav__link">About us</a>
-                    </li>
-                    <li class="nav__item">
+                        </li>
+                        <li class="nav__item">
                         <a href="#3" class="nav__link">Activities</a>
-                    </li>
-                    <li class="nav__item">
+                        </li>
+                        <li class="nav__item">
                         <a href="gallery.html" class="nav__link">Gallery</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#joinus" class="nav__link">Join Us</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="contact.html" class="nav__link">Contact Us</a>
-                     </li>
+                        </li>
+                        <li class="nav__item dropdown">
+                        <button class="dropbtn navdropdown__link">Contact &nbsp;
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="joinus.html" class="nav__link">Join Us</a>
+                            <a href="contact.html" class="nav__link">Contact Us</a>
+                            <a href="volunteer.html" class="nav__link">Volunteer</a>
+                        </div>
+                        </li>
                 </ul>
 
                 <!-- Close button -->
                 <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
+                        <i class="ri-close-line"></i>
                 </div>
             </div>
 
             <div class="nav__buttons">
                 <!-- Toggle button  -->
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
+                        <i class="ri-menu-line"></i>
                 </div>
             </div>
-        </nav>
-    </header>
+            </nav>
+        </header>
 
     <!--================================== BANNER ==============================-->
 
     <section class="banner" id="banner">
 
         <div class="banner-slider">
-            <!-- <div class="banner-list"> -->
 
-            <!-- <div class="banner-item">
-                    <img src="images/BannerImage1.jpg">
-                </div> -->
-
-            <div class="banner-item banner-item2">
+            <div class="banner-item banner-item1">
                 <div class="banneritem-left">
                     <h1 class="bannerleft-heading">Garad Foundation</h1>
                     <p class="bannerleft-subheading">GLORY OF HUMANITY :)</p>
@@ -117,20 +121,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- </div> -->
-            <!-- Button prev and next -->
-
-            <!-- <div class="banner-buttons">
-                <button id="banner-prev"><</button>
-                <button id="banner-next">></button>
-            </div> -->
-
-            <!-- Dots  -->
-            <!-- <ul class="banner-dots">
-                <li class="banner-active"></li>
-                <li></li>
-            </ul> -->
         </div>
 
     </section>
@@ -161,63 +151,31 @@
     <section class="objective" id="objective">
         <h1 class="objective-heading">Our Objectives</h1>
         <div class="object-container">
-        <div class="object-container1">
-            <div class="objective-text1">
-                <img src="./images/studentdev.jpg" class="objective-img1 objective-img" alt="">
-                <h3> Student<br> Development</h3>
-                <br>
-                <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, a voluptate. Illo
-                    voluptates
-                    illum corporis facilis tempora laboriosam assumenda praesentium excepturi, quia voluptatum
-                    dignissimos rem nostrum ipsa quae pariatur dolor itaque quaerat </p> -->
+            <div class="object-container1">
+                <div class="objective-text1">
+                    <img src="./images/studentdev.jpg" class="objective-img1 objective-img" alt="">
+                    <h3 class="objective-para"> Student<br> Development</h3>
+                </div>
             </div>
 
-    </div>
-
-    <div class="object-container2">
-        <div class="objective-text2">
-            <img src="./images/personalitydev.jpg" class="objective-img2 objective-img" alt="">
-            <h3> Personality<br> Development</h3>
-            <br>
-            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quam asperiores mollitia quod
-                nostrum cupiditate ex, ratione dicta eligendi possimus quis fugiat doloremque? Omnis vero
-                aliquam
-                aut laboriosam quae, cupiditate perferendis earum animi placeat
-                </p> -->
+            <div class="object-container2">
+                <div class="objective-text2">
+                    <img src="./images/personalitydev.jpg" class="objective-img2 objective-img" alt="">
+                    <h3 class="objective-para"> Personality<br> Development</h3>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-    <div class="object-container3">
-        <div class="objective-text3">
-            <img src="./images/empoweryouth.jpeg" class="objective-img3 objective-img" alt="">
-            <h3>Empower<br> Youth</h3>
-            <br>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem accusantium nobis, harum
-                praesentium
-                obcaecati placeat culpa consectetur dolorem enim ducimus magnam optio ex mollitia ab, sint,
-                possimus
-                iure.</p> -->
+        <div class="object-second-container">
+            <div class="object-container3">
+                <div class="objective-text3">
+                    <img src="./images/empoweryouth.jpeg" class="objective-img3 objective-img" alt="">
+                    <h3 class="objective-para"> Empower<br> Youth</h3>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <!-- <div class="object-container4">
-        <div class="objective-text4">
-            <img src="./images/personalitydev.jpg" class="objective-img2 objective-img" alt="">
-            <h3> Personality<br> Development</h3>
-            <br>
-             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae quam asperiores mollitia quod
-                nostrum cupiditate ex, ratione dicta eligendi possimus quis fugiat doloremque? Omnis vero
-                aliquam
-                aut laboriosam quae, cupiditate perferendis earum animi placeat
-                </p> 
-        </div> -->
-    
-    
-    </div>
     </section>
-        <!-- <section class="activites"></section> -->
-        <!-- <section class="blogs"></section> -->
  
 
     <!-- ==================================== Dynamic Number ====================================== -->
