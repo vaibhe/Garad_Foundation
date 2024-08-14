@@ -1,0 +1,568 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+body {
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #FE8F50;
+     transition: background 0.4s;
+     font-family: "Poppins", sans-serif;
+ }
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================== NAVBAR ========================== */
+
+.navbar-header {
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(19, 100%, 96%);
+    /* hsl(19, 100%, 96%) */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: box-shadow .3s, background .4s;
+  }
+  
+  .nav-container {
+    max-width: 1024px;
+    margin-inline: 1.5rem;
+  }
+  
+  .nav {
+    position: relative;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav__logo,
+  .nav__toggle,
+  .nav__close {
+    display: flex;
+    color: hsl(19, 16%, 15%);
+  }
+  
+  .nav__logo {
+    align-items: center;
+    column-gap: .5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color .3s;
+  }
+  
+  .nav__logo img {
+    width: 60px;
+  }
+  
+  .nav__logo:hover {
+    color: hsl(19, 64%, 54%);
+  }
+  
+  .nav__toggle {
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .nav__menu,
+  .bg-header {
+    box-shadow: 0 2px 8px hsla(19, 64%, 4%, .5);
+  }
+  
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 2rem;
+  }
+  
+  .nav__link, .navdropdown__link {
+    color: hsl(19, 16%, 15%);
+    font-weight: 500;
+    transition: color .4s;
+  }
+  
+  .nav__link:hover, .navdropdown__link:hover {
+    color: hsl(19, 64%, 54%);
+  }
+
+  .nav__link-active {
+    color: hsl(19, 64%, 54%);
+    font-weight: 500;
+    transition: color .4s;
+  }
+  
+  .nav__link-active:hover {
+    color: hsl(19, 16%, 15%);
+  }
+  
+  .nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Dropdown Container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    /* color: hsl(19, 16%, 15%); */
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: hsl(19, 100%, 96%);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content .nav__link {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content .nav__link-active {
+    float: none;
+    color: hsl(19, 64%, 54%);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content .nav__link:hover, .dropdown-content .nav__link-active:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .nav__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      background-color: hsl(19, 100%, 96%);
+      width: 100%;
+      box-shadow: 0 8px 20px hsla(19, 64%, 24%, .1);
+      padding-block: 3.5rem;
+      transition: top .4s;
+    }
+  }
+  
+  /*=============== BREAKPOINTS ===============*/
+  /* For small devices */
+  @media screen and (max-width: 340px) {
+    .nav-container {
+      margin-inline: 1rem;
+    }
+  
+    .dropdown-content{
+      position: absolute;
+      left: 50%;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  }
+  
+  @media (min-width:341px) and (max-width:766px) {
+    .dropdown-content{
+      position: absolute;
+      left: 50%;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (min-width: 767px) {
+    .nav {
+      column-gap: 3rem;
+    }
+  
+    .nav__toggle,
+    .nav__close {
+      display: none;
+    }
+  
+    .nav__list {
+      flex-direction: row;
+      column-gap: 3rem;
+    }
+  
+    .nav__menu {
+      margin-left: auto;
+      box-shadow: none;
+    }
+  
+    .dropdown-content{
+      position: absolute;
+      left: 85%;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+  }
+  
+  /* For large devices */
+  @media screen and (min-width: 1024px) {
+    .nav {
+      height: calc(3.5rem + 1.5rem);
+    }
+  }
+  
+  @media screen and (min-width: 1064px) {
+    .nav-container {
+      margin-inline: auto;
+    }
+  }
+  
+  /* Change background header */
+  .bg-header {
+    box-shadow: 0 2px 8px hsla(19, 64%, 24%, .1);
+  }
+  
+  /* Active link */
+  .active-link {
+    color: hsl(19, 64%, 54%);
+  }
+  
+  /* Show menu */
+  .show-menu {
+    top: 0;
+  }
+  
+  /* ================================ SCROLL BAR =========================== */
+  ::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: hsl(19, 8%, 75%);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: hsl(19, 8%, 65%);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(19, 8%, 55%);
+  }
+  
+  /* =============================== SCROLL UP ============================= */
+  .scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    background-color: hsl(19, 100%, 97%);
+    box-shadow: 0 4px 12px hsla(19, 64%, 24%, .1);
+    display: inline-flex;
+    padding: .35rem;
+    border-radius: .25rem;
+    font-size: 1.5rem;
+    color: hsl(19, 64%, 54%);
+    z-index: 10;
+    transition: bottom .3s, transform .3s, background .4s;
+  }
+  
+  .scrollup:hover {
+    transform: translateY(-.25rem);
+  }
+  
+  /* Show Scroll Up*/
+  .show-scroll {
+    bottom: 3rem;
+  }
+  
+
+/* ======================================= Form Section ================================= */
+.container {
+    /* position: relative; */
+    max-width: 900px;
+    width: 100%;
+    border-radius: 6px;
+    padding: 30px;
+    padding-bottom: 20px;
+    margin: 100px 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container header {
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.container header::before {
+    content: "";
+    position: absolute;
+    left: 50;
+    border-radius: 8px;
+    bottom: -2px;
+    height: 3px;
+    width: 240px;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+
+.container form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.container form .form {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+form.secActive .form.second,
+.container form .form.first {
+    width: 100%;
+    height: 100%;
+}
+
+.container form .form.second {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+
+form.secActive .form.second {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0%);
+}
+
+form.secActive .form.first {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+
+.container form .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+form .fields .input-field1 {
+    display: flex;
+    width: calc(100% / 2 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label,  .input-field1 label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+
+.input-field input, select, .input-field1 input {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field input:is(:focus, :valid), .input-field1 input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-field input[type="date"], .input-field1 input[type="date"] {
+    color: #707070;
+}
+
+.input-field input[type="date"]:valid, .input-field1 input[type="date"]:valid {
+    color: #333;
+}
+
+.container form button, .backBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #4070f4;
+    border-radius: 5px;
+    margin: 25px 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+form .buttons {
+    display: flex;
+    align-items: center;
+}
+
+.container form button,
+.container form .backBtn {
+   font-size: 14px;
+   font-weight: 400;
+}
+
+form button:hover {
+   background-color: #265df2;
+}
+
+form button i,
+form .backBtn i {
+   margin: 0 6px;
+}
+
+form .backBtn i {
+   transform: rotate(180deg);
+}
+
+form .buttons button, .backBtn {
+   margin-right: 14px;
+}
+
+/* ========= Media Queries Form Section ===================== */
+
+/* Handle media queries for responsive design */
+@media (max-width: 750px) {
+    .container {
+        margin-top: 5rem;
+    }
+
+    .container form {
+        overflow-y: scroll;
+    }
+
+    .container form::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Adjust input field width for smaller screens */
+    form .fields .input-field, form .fields .input-field1 {
+        width: calc(100% / 2 - 10px);
+    }
+}
+
+@media (max-width: 550px) {
+    /* Adjust input field width to full width on very small screens */
+    form .fields .input-field, form .fields .input-field1 {
+        width: 100%;
+    }
+
+    /* Ensure the container padding and margins are responsive */
+    .container {
+        padding: 20px;
+        margin: 80px 10px;
+    }
+
+    /* Adjust button width for smaller screens */
+    .container form button, .backBtn {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Further adjustments for very small screens */
+    .container {
+        padding: 15px;
+        margin: 80px 5px;
+    }
+
+    form .fields .input-field, form .fields .input-field1 {
+        width: 100%;
+    }
+
+    .container form button, .backBtn {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    /* Adjust form headers and titles */
+    .container header {
+        font-size: 18px;
+    }
+
+    .container header::before {
+        width: 170px;
+    }
+
+    .container form .title {
+        font-size: 14px;
+    }
+}

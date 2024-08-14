@@ -30,7 +30,7 @@ ul {
 /* =========================== NAVBAR ========================== */
 
 .navbar-header {
-  background-color: #FFFFFF;
+  background-color: hsl(19, 100%, 96%);
   /* hsl(19, 100%, 96%) */
   width: 100%;
   position: fixed;
@@ -94,13 +94,13 @@ ul {
   row-gap: 2rem;
 }
 
-.nav__link {
+.nav__link, .navdropdown__link {
   color: hsl(19, 16%, 15%);
   font-weight: 500;
   transition: color .4s;
 }
 
-.nav__link:hover {
+.nav__link:hover, .navdropdown__link:hover {
   color: hsl(19, 64%, 54%);
 }
 
@@ -110,6 +110,53 @@ ul {
   right: 1.5rem;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+/* Dropdown Container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: hsl(19, 16%, 15%);
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: hsl(19, 100%, 96%);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 @media screen and (max-width: 767px) {
@@ -130,6 +177,26 @@ ul {
 @media screen and (max-width: 340px) {
   .nav-container {
     margin-inline: 1rem;
+  }
+
+  .dropdown-content{
+    position: absolute;
+    left: 50%;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+@media (min-width:341px) and (max-width:766px) {
+  .dropdown-content{
+    position: absolute;
+    left: 50%;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 }
 
@@ -152,6 +219,15 @@ ul {
   .nav__menu {
     margin-left: auto;
     box-shadow: none;
+  }
+
+  .dropdown-content{
+    position: absolute;
+    left: 85%;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 
 }
@@ -182,60 +258,6 @@ ul {
 /* Show menu */
 .show-menu {
   top: 0;
-}
-
-/* Dropdown Container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border: none;
-  outline: none;
-  color: hsl(19, 16%, 15%);
-  /* padding: 14px 16px; */
-  background-color: inherit;
-  /* font-family: inherit; */
-  /* Important for vertical align on mobile phones */
-  margin: 0;
-  /* Important for vertical align on mobile phones */
-}
-
-.dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 /* ================================ SCROLL BAR =========================== */
@@ -312,14 +334,11 @@ ul {
   border-radius: 6%;
 }
 
-
-
 .about_data {
   padding: 8rem;
 }
 
 .about_data h1 {
-
   font-family: "Fuzzy Bubbles", sans-serif;
   font-size: 80px;
   color: rgb(51, 51, 86);
@@ -327,9 +346,7 @@ ul {
   margin-bottom: 2rem;
 }
 
-
 .about_data p {
-
   padding-top: 3rem;
   /* padding: 6rem; */
   color:  #BB3A8E;
@@ -342,6 +359,7 @@ ul {
 
 @media (max-width: 1024px) {
   .about_container {
+    margin-top: 3rem;
     flex-direction: column;
     align-items: center;
   }

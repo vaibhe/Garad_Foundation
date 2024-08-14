@@ -1,20 +1,3 @@
-/* ============================== DYNAMIC NUMBERS ================================ */
-let valueDisplays = document.querySelectorAll(".numbers-num");
-let interval = 5000;
-
-valueDisplays.forEach((valueDisplay) => {
-    let startValue = 0;
-    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-    let duration = Math.floor(interval / endValue);
-    let counter = setInterval(function (){
-        startValue += 1;
-        valueDisplay.textContent = startValue;
-        if(startValue == endValue) {
-            clearInterval(counter);
-        }
-    }, duration);
-});
-
 /*============================== SHOW MENU =================================*/
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
@@ -63,3 +46,38 @@ const scrollUp = () =>{
                                                : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
+
+// ======================================== FORMS SECTION ==========================================
+const formsBoth = document.querySelector("form"),
+    nextBtn = formsBoth.querySelector(".nextBtn"),
+    backBtn = formsBoth.querySelector(".backBtn"),
+    allInput = formsBoth.querySelectorAll(".first input");
+
+nextBtn.addEventListener("click", () => {
+    let allFilled = true;
+    allInput.forEach(input => {
+        if (input.value === "") {
+            allFilled = false;
+        }
+    });
+    if (allFilled) {
+        formsBoth.classList.add('secActive');
+    } else {
+        alert("Please fill in all the required fields.");
+        formsBoth.classList.remove('secActive');
+    }
+});
+
+backBtn.addEventListener("click", () => formsBoth.classList.remove('secActive'));
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbz5VHx0VDllqihis57fN6MMavoCX4dQkpDZWOyeBbgG5vhfowpqt82UflTkvVO7HWDgyA/exec'
+const form = document.forms['submit-to-google-sheet']
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+});
+
