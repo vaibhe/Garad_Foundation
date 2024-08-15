@@ -6,9 +6,9 @@
 
 body {
     min-height: 100vh;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     background-color: #FE8F50;
     transition: background 0.4s;
     font-family: "Poppins", sans-serif;
@@ -319,7 +319,9 @@ ul {
 
 /* ======================================= Form Section ================================= */
 .container {
-    /* position: relative; */
+        /* display: flex;
+    align-items: center;
+    justify-content: center; */
     max-width: 900px;
     width: 100%;
     border-radius: 6px;
@@ -615,3 +617,113 @@ form .buttons button, .backBtn {
     }
 }
   
+/* ================================ Footer ====================================== */
+.footer__image {
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 0px;
+}
+
+.footer__anchor {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__h4 {
+  font-size: 1rem;
+}
+
+.footer__para,
+.footer__small,
+.footer__h4,
+.footer__subheading {
+  color: #FFFFFF;
+}
+
+.footer__subheading {
+  font-size: 0.6rem;
+  font-weight: 500;
+}
+
+.footer__address {
+  line-height: 2;
+}
+
+footer {
+  background-color: #2e3267;
+  padding-top: 5rem;
+  font-size: 0.9rem;
+}
+
+.footer__container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+}
+
+.footer-logo {
+  width: 90px;
+}
+
+.footer__container>div h4 {
+  margin-bottom: 1.2rem;
+}
+
+.footer__1 .footer__para {
+  margin: 0 0 2rem;
+}
+
+footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 2rem; 
+}
+
+.footer__socials i{
+  padding: 0.5rem;
+}
+
+.footer__socials li{
+  background-color: #BB3A8E;
+  border-radius: 10%;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid #424890;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer__container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer__container {
+      grid-template-columns: 1fr;
+      text-align: center;
+      gap: 2rem;
+  }
+
+  .footer__1 p {
+      margin: 1rem auto;
+  }
+
+  .footer__socials {
+      justify-content: center;
+  }
+}
