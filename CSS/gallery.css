@@ -450,7 +450,7 @@ input, button, i {
 }
 
 .card {
-    width: 325px;
+    width: 320px;
     height: 350px;
     background-color:#04270C;
     border-radius: 8px;
@@ -511,8 +511,8 @@ input, button, i {
 
 .card {
   width: 100%;
-  max-width: 325px;
-  height: auto;
+  max-width:350px;
+  height: 360px;
   background-color: #04270C;
   border-radius: 8px;
   text-align: center;
