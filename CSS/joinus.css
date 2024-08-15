@@ -1,26 +1,26 @@
 * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
- }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
-     min-height: 100vh;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background-color: #FE8F50;
-     transition: background 0.4s;
-     font-family: "Poppins", sans-serif;
- }
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FE8F50;
+    transition: background 0.4s;
+    font-family: "Poppins", sans-serif;
+}
 
 a {
-    color: black;
-    text-decoration: none;
+   color: black;
+   text-decoration: none;
 }
 
 ul {
-    list-style: none;
+   list-style: none;
 }
 
 /* =========================== NAVBAR ========================== */
@@ -316,7 +316,6 @@ ul {
   .show-scroll {
     bottom: 3rem;
   }
-  
 
 /* ======================================= Form Section ================================= */
 .container {
@@ -347,7 +346,7 @@ ul {
     border-radius: 8px;
     bottom: -2px;
     height: 3px;
-    width: 240px;
+    width: 220px;
     border-radius: 8px;
     background-color: #4070f4;
 }
@@ -355,7 +354,7 @@ ul {
 .container form {
     position: relative;
     margin-top: 16px;
-    min-height: 490px;
+    min-height: 590px;
     background-color: #fff;
     overflow: hidden;
 }
@@ -615,3 +614,4 @@ form .buttons button, .backBtn {
         font-size: 14px;
     }
 }
+  
