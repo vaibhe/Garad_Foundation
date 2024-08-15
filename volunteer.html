@@ -126,23 +126,22 @@
 
                     <div class="fields">
                         <div class="input-field">
-                            <label>Full Name</label>
+                            <label>Full Name <span class="required-label">*</span></label>
                             <input type="text" name="Full Name" placeholder="Enter your name" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Date of Birth</label>
+                            <label>Date of Birth <span class="required-label">*</span></label>
                             <input type="date" name="Date of Birth" placeholder="Enter birth date" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Email</label>
+                            <label>Email <span class="required-label">*</span></label>
                             <input type="text" name="Email" placeholder="Enter your email" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Gender</label>
-                            <!-- <input type="text" placeholder="Enter your gender" required> -->
+                            <label>Gender <span class="required-label">*</span></label>
                             <select name="Gender" id="gender" required>
                                 <option value="" disabled selected>Select your gender</option>
                                 <option value="male">Male</option>
@@ -151,17 +150,17 @@
                         </div>
 
                         <div class="input-field">
-                            <label>Mobile Number</label>
+                            <label>Mobile Number <span class="required-label">*</span></label>
                             <input type="number" name="Mobile Number" placeholder="Enter mobile number" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Whatsapp Number</label>
+                            <label>Whatsapp Number <span class="required-label">*</span></label>
                             <input type="number" name="Whatsapp Number" placeholder="Enter your whatsapp number" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Residential Address</label>
+                            <label>Residential Address <span class="required-label">*</span></label>
                             <input type="text" name="Residential Address" placeholder="Enter your residential address" required>
                         </div>
 
@@ -173,17 +172,17 @@
 
                     <div class="fields">
                         <div class="input-field">
-                            <label>Emergency Phone Number</label>
+                            <label>Emergency Phone Number <span class="required-label">*</span></label>
                             <input type="number" name="Emergency Phone Number" placeholder="Enter your emergency number" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Emergency Contact Person</label>
+                            <label>Emergency Contact Person <span class="required-label">*</span></label>
                             <input type="text" name="Emergency_Contact_Person" placeholder="Enter contact person name" required>
                         </div>
 
                         <div class="input-field">
-                            <label>Relation</label>
+                            <label>Relation <span class="required-label">*</span></label>
                             <input type="text" name="Relation" placeholder="Enter relation with the person" required>
                         </div>
 
@@ -203,12 +202,12 @@
 
                     <div class="fields">
                         <div class="input-field1">
-                            <label>Highest Qualification</label>
+                            <label>Highest Qualification <span class="required-label">*</span></label>
                             <input type="text" name="Highest Qualification" placeholder="Enter highest qualification" required>
                         </div>
 
                         <div class="input-field1">
-                            <label>Field of Study</label>
+                            <label>Field of Study <span class="required-label">*</span></label>
                             <input type="text" name="Field of Study" placeholder="Enter field of study" required>
                         </div>
 
@@ -241,9 +240,10 @@
 
                     <div class="fields">
                         <div class="input-field">
-                            <label>Do you any Experience of Volunteering Before ?</label>
+                            <label>Do you any Experience of Volunteering Before ? <span class="required-label">*</span></label>
                             <!-- <input type="text" placeholder="Enter highest qualification" required> -->
                             <select name="Experience of Volunteering" id="options" required>
+                                <option value="" disabled selected>Select yes or no</option>
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
                             </select>
@@ -255,7 +255,7 @@
                         </div>
 
                         <div class="input-field">
-                            <label>In Which Field You are Interested to Volunteer ?</label>
+                            <label>In Which Field You are Interested to Volunteer ? <span class="required-label">*</span></label>
                             <!-- <input type="text" placeholder="Enter organization name and duration"> -->
                             <select name="In Which Field You are Interested to Volunteer ?" id="options" required>
                                 <option value="" disabled selected>Select interested field</option>
@@ -289,6 +289,19 @@
 
         </form>
     </div>
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="popup" style="display:none;">
+        <div class="popup-content">
+            <p>Form Successfully Submitted!</p>
+            <span id="closePopup" class="close">&times;</span>
+        </div>
+
+        <div id="progressBarContainer">
+            <div id="progressBar"></div>
+        </div>
+    </div>
+    
 
     <script src="/JS/volunteer.js"></script>
 </body>
