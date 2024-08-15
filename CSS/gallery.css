@@ -496,12 +496,89 @@ input, button, i {
     transition: 0.5s;
 }
 
-/* @media only screen and (min-width:470px) {
-    .card-content h3 {
-        font-size: 0.5rem;
-    }
-} */
+@media (min-width: 768px) {
+  .card-container > div:hover {
+      transform: translateY(-10px);
+      box-shadow: 20px 15px 10px 0 rgba(0, 0, 0, 0.3);
+      transition: 0.5s; 
+  }
 
+  .card-container > div:hover .card-image {
+      transform: scale(1.05);
+      transition: 0.5s;
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 325px;
+  height: auto;
+  background-color: #04270C;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+  margin: 20px;
+}
+
+/* Adjustments for tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .card {
+      max-width: 300px;
+      margin-right: 2rem;
+  }
+}
+
+/* Adjustments for mobile phones */
+@media (max-width: 599px) {
+  .card {
+      margin-right: 0;
+      margin-left: 0;
+  }
+
+  .card-content h3 {
+      font-size: 1.2rem;
+  }
+
+  .card-content .btn {
+      padding: 8px 24px;
+      font-size: 1rem;
+  }
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  font-family: 'Montserrat', sans-serif;
+  padding: 16px;
+  text-align: center;
+}
+
+.card-content h3 {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  color: #ffff;
+}
+
+.card-content .btn {
+  display: inline-block;
+  padding: 8px 32px;
+  background-color: #FFDF5E;
+  border-radius: 4px;
+  margin-top: 16px;
+  color: #333356;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.card-content .btn:hover {
+  background-color: #BB3A8E;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
 
 /* ================================ Footer ====================================== */
 .footer__image {
