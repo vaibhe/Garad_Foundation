@@ -17,6 +17,13 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Sacramento&display=swap"
         rel="stylesheet">
 
+    <!-- GOOGLE FONTS (POPPINS) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
     <!-- GOOGLE FONTS (MANROPE)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,6 +42,12 @@
     <!-- Remixicons -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--====== Iconscout CSS ======-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
     <link rel="stylesheet" href="/CSS/contact.css">
 </head>
@@ -115,28 +128,28 @@
                         <div class="responsive-container-block">
                             <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
                                 <p class="text-blk input-title">
-                                    FIRST NAME
+                                    First Name <span class="required-label">*</span>
                                 </p>
                                 <input class="input" id="ijowk" name="FirstName"
                                     placeholder="Please enter first name..." required>
                             </div>
                             <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                                 <p class="text-blk input-title">
-                                    LAST NAME
+                                    Last Name <span class="required-label">*</span>
                                 </p>
                                 <input class="input" id="indfi" name="Last Name" placeholder="Please enter last name..."
                                     required>
                             </div>
                             <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                                 <p class="text-blk input-title">
-                                    EMAIL
+                                    Email <span class="required-label">*</span>
                                 </p>
                                 <input class="input" id="ipmgh" name="Email" placeholder="Please enter email..."
                                     type="email" required>
                             </div>
                             <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                                 <p class="text-blk input-title">
-                                    PHONE NUMBER
+                                    Phone Number <span class="required-label">*</span>
                                 </p>
                                 <input class="input" id="imgis" name="PhoneNumber"
                                     placeholder="Please enter phone number..." type="text" minlength="10"
@@ -144,7 +157,7 @@
                             </div>
                             <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i">
                                 <p class="text-blk input-title">
-                                    WHAT DO YOU HAVE IN MIND
+                                    What do you have in mind ? <span class="required-label">*</span>
                                 </p>
                                 <label>
                                     <textarea class="textinput" id="i5vyy" placeholder="Please enter query..."
@@ -154,7 +167,8 @@
                             </div>
                         </div>
                         <button class="submit-btn" id="submit-button">
-                            Submit
+                            <span class="submit-text">Submit Response</span>
+                            <i class="uil uil-navigator"></i>
                         </button>
                     </div>
                     <div class="social-media-links">
@@ -293,7 +307,7 @@
         const scriptURL = 'https://script.google.com/macros/s/AKfycbyXBXtKjOedZRx5PO1SA0xtu-AhKzR6KzPxCVhmsyS7Yk-galqlpiqSVToNm4MpAnJm/exec'
         const form = document.forms['submit-to-google-sheet']
         const success = document.getElementById("success")
-        const submitButton = document.getElementById("submit-button");
+        const submitButton = document.getElementsByClassName("submit-text")[0];
 
         form.addEventListener('submit', e => {
             e.preventDefault();
@@ -310,14 +324,14 @@
                 .then(response => {
                     success.style.display = "block"; // Show the success message
                     form.reset();
-                    submitButton.textContent = "Submit"; // Revert the button text to 'Submit'
+                    submitButton.textContent = "Submit Response"; // Revert the button text to 'Submit'
                     setTimeout(() => {
                         success.style.display = "none"; // Hide the message after 3 seconds
                     }, 3000);
                 })
                 .catch(error => {
                     console.error('Error!', error.message);
-                    submitButton.textContent = "Submit"; // Revert the button text even if there's an error
+                    submitButton.textContent = "Submit Response"; // Revert the button text even if there's an error
                 });
         });
 
