@@ -13,7 +13,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.7;
     color: hsl(19, 16%, 35%);
-    background-color: #FE8F50;
+    background-color: #1f2641;
     /* hsl(19, 100%, 96%)  */
     transition: background 0.4s;
 }
@@ -365,37 +365,33 @@ p {
     position: relative;
     top: 5rem;
     overflow: hidden;
-    height: 100vh;
-    margin-bottom: 5rem;
+    height: 98vh;
 }
 
 .banner-item1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
     align-items: center;
     gap: 5rem;
     height: 100%;
 }
 
 .banneritem-left {
-    position: relative;
-    left: 5rem;
-    bottom: 5rem;
-    margin-left: 2rem;
+   margin: 0 auto;
+   position: relative;
+   bottom: 10%;
 }
 
 .bannerleft-heading {
     font-family: "Manrope", sans-serif;
-    font-size: 80px;
+    font-size: 70px;
     color: #333356;
     margin-bottom: 2rem;
-    /* position: relative;
-    right: 6%; */
 }
 
 .bannerleft-subheading {
     font-family: "Fuzzy Bubbles", sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     color: #333356;
     line-height: 1;
     margin-bottom: 2rem;
@@ -418,7 +414,7 @@ p {
 
 .banneritem-right {
     position: relative;
-    right: 8%;
+    right: 30%;
     bottom: 10%;
 }
 
@@ -458,8 +454,22 @@ p {
 
 /*=============== BREAKPOINTS ===============*/
 
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .bannerleft-heading {
+        font-size: 60px;
+    }
+
+    .bannerleft-subheading {
+        font-size: 50px;
+    }
+}
+
 /* For medium devices (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
+    .banner-slider {
+        height: auto;
+    }
+
     .banner-item1 {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -467,9 +477,11 @@ p {
     }
 
     .banneritem-left {
-        left: 0;
-        bottom: 0;
-        margin-left: 0;
+        position: relative;
+        margin: 0 auto; /* Center horizontally */
+        top: 50%;
+        transform: translateY(-50%); /* Center vertically */
+        margin-bottom: 130px; /* Adjust based on your design */
     }
 
     .banneritem-right {
@@ -490,8 +502,10 @@ p {
     }
 
     .bannerright-image img {
-        width: 80%;
+        width: 35%;
         margin: 0 auto;
+        position: relative;
+        bottom: 80px;
     }
 }
 
@@ -499,8 +513,8 @@ p {
 @media screen and (max-width: 767px) {
     .banner-slider {
         height: auto;
-        margin-bottom: 2rem;
         padding: 2rem 1rem;
+        padding-top: 0rem;
     }
 
     .banner-item1 {
@@ -510,9 +524,10 @@ p {
 
     .banneritem-left {
         position: relative;
-        left: 0;  /* Remove the left offset */
-        bottom: 0; /* Remove the bottom offset */
-        margin-left: 0;  /* Remove left margin */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: 130px;
     }
 
     .bannerleft-heading {
@@ -535,7 +550,7 @@ p {
     }
 
     .bannerright-image img {
-        width: 70%;
+        width: 50%;
         margin: 0 auto;
     }
 }
@@ -543,7 +558,12 @@ p {
 
 /* For extra small devices (max-width: 480px) */
 @media screen and (max-width: 480px) {
+    .banner-slider {
+        padding-top: 0rem;
+    }
+
     .bannerleft-heading {
+        margin-top: 0px;
         font-size: 40px;
     }
 
@@ -562,8 +582,13 @@ p {
 
 /* For very small devices (max-width: 340px) */
 @media screen and (max-width: 340px) {
+    .banner-slider {
+        padding-top: 0rem;
+    }
+
     .bannerleft-heading {
         font-size: 30px;
+        margin-top: 0px;
     }
 
     .bannerleft-subheading {
@@ -583,12 +608,12 @@ p {
 
 .mission {
     background-color: #FFFFFF;
-    height: 100vh;
+    padding: 5rem 0;
 }
 
 .mission-container {
     text-align: center;
-    padding: 1rem 5rem 3rem 5rem;
+    padding: 0 2rem;
 }
 
 .mission-heading {
@@ -604,7 +629,7 @@ p {
     background-color: #FFDF5E;
     border-radius: 8px;
     color: #333356;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: 800;
     padding: 5px 10px;
     margin-bottom: 3rem;
@@ -615,9 +640,8 @@ p {
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     font-weight: 800;
-    font-style: normal;
-    padding-left: 9rem;
-    padding-right: 9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -634,6 +658,81 @@ p {
 .mission-button:hover {
     background-color: #FE8F50;
 }
+
+/*=============== BREAKPOINTS ===============*/
+
+/* For medium devices (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .mission-heading {
+        font-size: 50px;
+    }
+
+    .missionpara-info {
+        font-size: 22px;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+/* For small devices (max-width: 767px) */
+@media screen and (max-width: 767px) {
+    .mission-heading {
+        font-size: 40px;
+    }
+
+    .mission-aim {
+        font-size: 12px;
+    }
+
+    .missionpara-info {
+        font-size: 20px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .mission-button {
+        padding: 12px 40px;
+    }
+}
+
+/* For extra small devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .mission-heading {
+        font-size: 32px;
+    }
+
+    .mission-aim {
+        font-size: 10px;
+    }
+
+    .missionpara-info {
+        font-size: 18px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .mission-button {
+        padding: 10px 30px;
+    }
+}
+
+/* For very small devices (max-width: 340px) */
+@media screen and (max-width: 340px) {
+    .mission-heading {
+        font-size: 28px;
+    }
+
+    .missionpara-info {
+        font-size: 16px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .mission-button {
+        padding: 8px 25px;
+    }
+}
+
 
 
 /* ================================ OBJECTIVES ============================ */
@@ -693,12 +792,12 @@ p {
     margin-top: 5rem;
 }
 
-.objective-text1 h3, .objective-text2 h3, .objective-text3 h3 {
+.objective-para {
     /* padding-top: 2rem; */
     /* font-family: "Manrope", sans-serif; */
     font-family: "Edu VIC WA NT Beginner", "Manrope", cursive;
     font-optical-sizing: auto;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 800;
     /* padding-top: 3.5rem; */
     text-align: center;
@@ -752,9 +851,217 @@ p {
     transition: 0.2s;
 }
 
+/* ================================ BREAKPOINTS ============================ */
+
+@media (min-width:1025px) and (max-width:1330px) {
+    .objective-img1, .objective-img2, .objective-img3 {
+        max-width: 210px;
+    }
+
+    .objective-para, .objective-para1 {
+        font-size: 20px;
+    }
+}
+
+/* For medium devices (max-width: 1024px) */
+@media (min-width:767px) and (max-width: 1024px) {
+    .objective-heading {
+        font-size: 60px;
+    }
+
+    .object-container1, .object-container2, .object-container3 {
+        width: 80%;
+        margin-left: 0px;
+    }
+
+    .object-container1, .object-container2 {
+        /* margin-left: 62px; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .object-container1 {
+        margin-top: 15px;
+    }
+
+    .objective-para {
+        font-size: 24px;
+        margin-left: 1rem;
+    }
+
+    .object-container{
+        grid-template-columns: 1fr;
+    }
+
+    .objective-img1, .objective-img2, .objective-img3 {
+        max-width: 300px;
+    }
+
+    .objective-para {
+        position: absolute;
+        font-size: 30px;
+        left: 55%;
+    }
+
+    .objective-para1 {
+        left: 15%;
+    }
+}
+
+/* For small devices (max-width: 767px) */
+@media (min-width:480px) and (max-width: 768px) {
+    .objective-heading {
+        font-size: 70px;
+    }
+
+    .object-container1, .object-container2, .object-container3 {
+        width: 75%;
+        margin-left: 0px;
+    }
+
+    .object-container1, .object-container2 {
+        margin: 0 auto;
+    }
+
+    .object-container1 {
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    .object-container3 {
+        margin-top: 50px;
+    }
+
+    .objective-para {
+        font-size: 24px;
+        margin-left: 1rem;
+    }
+
+    .object-container{
+        grid-template-columns: 1fr;
+    }
+
+    .objective-img1, .objective-img2, .objective-img3 {
+        max-width: 190px;
+    }
+
+    .objective-para {
+        position: absolute;
+        font-size: 24px;
+        left: 55%;
+    }
+
+    .objective-para1 {
+        left: 10%;
+    }
+}
+
+/* For extra small devices (max-width: 480px) */
+@media (min-width:342px) and (max-width: 479px) {
+    .objective-heading {
+        font-size: 45px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .object-container {
+        grid-template-columns: 1fr;
+    }
+
+    .objective-para {
+        position: relative;
+        bottom: 10px;
+        font-size: 13px;
+    }
+
+    .objective-img {
+        max-width: 100px;
+
+    }
+
+    .object-container1 {
+        margin-top: 10px;
+    }
+
+    .object-container1, .object-container2 {
+        height: auto;
+    }
+
+    .object-container1, .object-container2 {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .object-container2 {
+        margin-top: 30px;
+    }
+
+    .object-container3 {
+        margin-left: 0;
+        width: 70%;
+        height: auto;
+        margin-top: 30px;
+        margin-bottom: 25px;
+
+        /* grid-column: span 1; */
+    }
+}
+
+/* For very small devices (max-width: 340px) */
+@media screen and (max-width: 342px) {
+    .objective-heading {
+        font-size: 40px;
+        margin-bottom: 5px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 60px;
+    }
+
+    .object-container {
+        grid-template-columns: 1fr;
+    }
+
+    .object-container1, .object-container2, .object-container3 {
+        width: 50%;
+        height: auto;
+        margin-top: 30px;
+    }
+
+
+    .object-container3 {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    .objective-para {
+        position: absolute;
+        font-size: 12px;
+        left: 58%;
+    }
+
+    .objective-para1 {
+        left: 23%;
+    }
+
+    .objective-img {
+        max-width: 100px;
+    }
+
+    .objective-img1, .objective-img3 {
+        position: relative;
+        right: 20px;
+        bottom: 10px;
+    }
+
+    .objective-img2 {
+        position: relative;
+        left: 20px;
+    }
+}
+
 /* =============================== Objective end ===================================== */
 
-/* =============================== Dynamic Numbers =================================== */
+/* =============================== Dynamic Numbers =============================== */
 
 .numbers-section {
     background-color: #2F2F2F;
@@ -763,92 +1070,86 @@ p {
 }
 
 .numbers-wrapper {
-    /* border: 1px solid white; */
-    /* position: absolute; */
-    /* transform: translate(-50%, -50%); */
-    /* top: 50%;
-    left: 50%; */
-    width: 80vw;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
     gap: 25px;
-    position: relative;
-    left: 8.5rem;
+    flex-wrap: wrap; /* Wraps items on smaller screens */
 }
 
 .numbers-container {
-    width: 28vmin;
-    height: 28vmin;
-    /* border: 1px solid orange; */
+    flex: 1 1 200px; /* Allows flexibility and wrapping */
+    max-width: 250px;
+    min-width: 150px;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 1em 0;
-    position: relative;
-    font-size: 16px;
+    align-items: center;
+    padding: 1em;
     border-radius: 0.5em;
-    /* background-color: #21242b; */
-    /* border-bottom: 10px solid #18f98f; */
+    text-align: center;
+    background-color: #3a3a3a; /* Optional background color */
+    margin: 1rem; /* Spacing between items */
 }
 
 .dynamicnumbers-icon {
     color: #fdd831;
     font-size: 2.5em;
-    text-align: center;
 }
 
 span.numbers-num {
     color: #ffffff;
-    display: grid;
-    place-items: center;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 2.5em;
+    margin-top: 0.5rem;
 }
 
 span.numbers-text {
     color: #e0e0e0;
     font-size: 1em;
-    text-align: center;
-    pad: 0.7em 0;
-    font-weight: 400;
-    line-height: 0;
+    margin-top: 0.5rem;
 }
 
-@media screen and (max-width: 1024px) {
-    .numbers-wrapper {
-        width: 85vm;
-    }
-
-    .numbers-container {
-        height: 26vmin;
-        width: 26vmin;
-        font-size: 12px;
-    }
-}
-
+/* Medium devices (tablets, 768px and up) */
 @media screen and (max-width: 768px) {
-    .numbers-wrapper {
-        width: 90vw;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
     .numbers-container {
-        width: calc(50% - 40px);
-        height: 30vmin;
-        font-size: 14px;
+        max-width: 45%; /* Allows two columns on medium screens */
+        margin: 1rem auto; /* Center items */
+        font-size: 0.9em;
     }
 }
 
+/* Small devices (phones, 480px and up) */
 @media screen and (max-width: 480px) {
-    .numbers-wrapper {
-        gap: 15px;
+    .numbers-container {
+        max-width: 100%; /* Full width on small screens */
+        font-size: 0.8em;
+        padding: 1rem;
     }
 
+    span.numbers-num {
+        font-size: 2em;
+    }
+
+    span.numbers-text {
+        font-size: 0.9em;
+    }
+}
+
+/* Extra small devices (phones, 340px and up) */
+@media screen and (max-width: 340px) {
     .numbers-container {
-        width: 100%;
-        height: 25vmin;
-        font-size: 8px;
+        font-size: 0.7em;
+    }
+
+    span.numbers-num {
+        font-size: 1.8em;
+    }
+
+    span.numbers-text {
+        font-size: 0.8em;
     }
 }
 
@@ -880,12 +1181,18 @@ span.numbers-text {
     margin-top: 2rem;
     margin-left: 4rem;
     margin-bottom: 4rem;
+    margin-left: auto;  /* Adjusted */
+    margin-right: auto; /* Adjusted */
+    padding: 0 1.1rem;  /* Added padding to prevent overflow */
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 .card__article {
     position: relative;
     overflow: hidden;
     margin-right: 7rem;
+    margin: 0 auto; /* Center the cards */
+    max-width: 100%; /* Prevent overflow */
     
 }
 
@@ -1007,14 +1314,38 @@ span.numbers-text {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 410px) {
+    .activity-heading {
+        font-size: 40px;
+    }
+
+    .activity_cards {
+        /* margin-left: 0.5rem; */
+        margin-bottom: 2.5rem;
+        row-gap: 2.5rem;
+    }
+
     .actvity_container {
-        margin-inline: 1rem;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .card__article {
+        width: 250px;
+    }
+
+    .card__img {
+        width: 100%;
     }
 
     .card__data {
-        width: 250px;
+        width: 200px;
         padding: 1rem;
+        padding-left: 0.5rem;
+    }
+
+    .card__article:hover .card__data {
+        width: 200px;
     }
 }
 
@@ -1022,12 +1353,12 @@ span.numbers-text {
 @media screen and (min-width: 768px) {
     .activity_cards {
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 1.5rem;
+        column-gap: 5.5rem;
     }
 }
 
 /* For large devices */
-@media screen and (min-width: 1120px) {
+@media screen and (min-width: 1200px) {
     .actvity_container {
         height: auto;
     }
@@ -1052,11 +1383,12 @@ span.numbers-text {
 .volunteer-container {
     width: 100%;
     background-color: #333356;
+    padding-bottom: 2.5rem;
 }
 
 .volunteer-heading {
     font-family: "Fuzzy Bubbles", sans-serif;
-    font-size: 60px;
+    font-size: 4rem; /* Default font size */
     color: #FFFFFF;
     text-align: center;
     line-height: 1;
@@ -1067,38 +1399,35 @@ span.numbers-text {
 
 .volunteer-subheading {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.25rem; /* Default font size */
     font-weight: 200;
     color: #E9DEFC;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
 }
 
 .volunteer-row {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-flow: wrap;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align the cards */
 }
 
 .volunteer-card {
-    width: 25%;
-    /* background: #fff; */
-    /* border: 1px solid #ccc; */
-    margin-bottom: 50px;
+    flex: 1 1 22%; /* Default: 4 cards per row on large screens */
+    margin: 1rem;
     transition: 0.3s;
     border-radius: 10px;
     padding-bottom: 10px;
-    /* box-shadow: 15px 10px 6px 0 gray; */
 }
 
 .volunteer-card-header {
     text-align: center;
-    padding: 40px 10px;
+    padding: 2.5rem 1rem; /* Adjusted padding */
     color: #fff;
 }
 
-.volunteer-card-header h3{
+.volunteer-card-header h3 {
     color: #FFFFFF;
+    font-size: 1.25rem; /* Default font size */
 }
 
 .volunteer-icon1::before {
@@ -1112,8 +1441,7 @@ span.numbers-text {
     border-radius: 0.5rem;
 }
 
-.volunteer-icon1, .volunteer-icon2,
-.volunteer-icon3, .volunteer-icon4{
+.volunteer-icon1, .volunteer-icon2, .volunteer-icon3, .volunteer-icon4 {
     padding-bottom: 2rem;
 }
 
@@ -1150,27 +1478,24 @@ span.numbers-text {
     border-radius: 0.5rem;
 }
 
-
 .volunteer-card-body {
-    /* padding: 20px 20px; */
     text-align: center;
-    font-size: 18px;
-
+    font-size: 1rem; /* Default font size */
 }
 
 .volunteer-card-body .btn {
     display: block;
     color: #333356;
     font-weight: 600;
-    margin-left: 2rem;
-    width: 80%;
+    margin: auto; /* Center align button */
+    width: 50%;
     text-align: center;
     background: #FFDF5E;
     transition: all 400ms ease;
     border-radius: .4rem;
     margin-top: 5px;
     text-decoration: none;
-    padding: 10px 5px;
+    padding: 0.75rem 1rem; /* Default padding */
 }
 
 .volunteer-card-body .btn:hover {
@@ -1182,167 +1507,169 @@ span.numbers-text {
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
 }
 
+/* Tablet view */
+@media screen and (max-width: 1024px) {
+    .volunteer-heading {
+        font-size: 3rem; /* Reduced font size for tablets */
+    }
 
+    .volunteer-subheading {
+        font-size: 1.1rem; /* Reduced font size for tablets */
+    }
 
-@media screen and (max-width: 1000px) {
     .volunteer-card {
-        width: 40%;
+        flex: 1 1 45%; /* 2 cards per row on tablets */
+    }
+
+    .volunteer-card-header {
+        padding: 2rem 0.75rem; /* Adjusted padding for tablets */
+    }
+
+    .volunteer-card-header h3 {
+        font-size: 1.1rem; /* Reduced font size for tablets */
+    }
+
+    .volunteer-card-body {
+        font-size: 0.95rem; /* Reduced font size for tablets */
+    }
+
+    .volunteer-card-body .btn {
+        padding: 0.5rem 0.75rem; /* Adjusted button padding for tablets */
     }
 }
 
+/* Mobile view */
 @media screen and (max-width: 620px) {
-    .volunteer-container {
-        width: 100%;
+    .volunteer-heading {
+        font-size: 2rem; /* Reduced font size for mobiles */
+    }
+
+    .volunteer-subheading {
+        font-size: 1rem; /* Reduced font size for mobiles */
     }
 
     .volunteer-card {
-        width: 80%;
+        flex: 1 1 100%; /* 1 card per row on mobile devices */
+    }
+
+    .volunteer-card-header {
+        padding: 1.5rem 0.5rem; /* Adjusted padding for mobiles */
+    }
+
+    .volunteer-card-header h3 {
+        font-size: 1rem; /* Reduced font size for mobiles */
+    }
+
+    .volunteer-card-body {
+        font-size: 0.85rem; /* Reduced font size for mobiles */
+    }
+
+    .volunteer-card-body .btn {
+        padding: 0.5rem; /* Adjusted button padding for mobiles */
     }
 }
 
-
-
-/* ============================= TESTIMONIALS ================================ */
-
-.section-t {
-    padding: 3rem 0;
-    background-color: #23A094; /* #FEFFD2 */
+/* ======================= TESTIMONALS ====================== */
+.test-container {
+    /* background-color: #23A094; */
+    width: 80%;
+    margin: 0 auto;
 }
 
-.testimonials-container {
-    max-width: 140rem;
-    margin: 0 auto;
+.testimonials__container {
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.testimonial {
+    padding-top: 2rem;
 }
 
 .testimonials-heading {
     font-family: "Fuzzy Bubbles", sans-serif;
     font-size: 60px;
-    color: #333356;
-    font-weight: 700;
-    text-align: center;
+    color: #FFFFFF;
     line-height: 1;
-    padding: 3rem;
-    padding-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 
-.grid {
-    display: grid;
-    gap: 10rem;
+.testimonials-h5, .testimonials-small, .testimonials-para {
+    color: #FFFFFF;
 }
 
-.grid-two-column {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.swiper {
-    width: 88%;
-    height: 30%;
-    margin-top: 2.5rem;
-}
-
-.swiper-slide {
-    /* background-color: #ced3ff;
-        border-radius: 10px; */
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin-bottom: 1rem; */
-
-    /* Center Slide text vertically */
-    /* display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-         */
-}
-
-.swiper-client-msg {
-    padding: 5rem 8rem;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    text-align: left;
-    box-shadow: 0px 0px 20px 0px rgb(132 144 255 / 20%);
-    position: relative;
-}
-
-
-.swiper-client-msg::before {
-    content: "";
-    position: absolute;
-    bottom: -8rem;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 4rem solid #fff;
-    border-color: transparent;
-    border-top-color: #f3f4ff;
-}
-
-.swiper-client-msg p {
-    font-size: 1rem;
-}
-
-.swiper-client-msg p::before {
-    content: "\f10d";
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 2rem;
-    font-size: 5rem;
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    color: #ced3ff;
-}
-
-.swiper-client-msg p::after {
-    content: "\f10e";
-    position: absolute;
-    bottom: 0;
-    right: 5%;
-    font-size: 5rem;
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    color: #ced3ff;
-}
-
-.swiper-slide img {
-    display: block;
+.testimonial-image {
     width: 100%;
-    height: 100%;
-    transform: scale(0.5);
+    display: block;
     object-fit: cover;
 }
 
-.swiper-client-data {
-    align-items: center;
-    justify-items: start;
-    justify-content: start;
-    gap: 1.4rem;
-    margin-top: 2rem;
-}
-
-.swiper-client-data img {
-    max-width: 10rem;
-    height: 10rem;
+.avatar {
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    border: 0.5rem solid #ced3ff;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid #2e3267;
+}
+
+.testimonial__info {
+    text-align: center;
+}
+
+.testimonial__body {
+    background: #6c63ff;
+    border-radius: 1.8rem;
+    padding: 2rem;
+    margin-top: 3rem;
     position: relative;
-    left: 2.5rem;
+    margin-bottom: 3rem;
 }
 
-.swiper-client-data p:first-child {
-    font-weight: bold;
-    color: rgb(0 10 45);
+.testimonial__body::before {
+    content: "";
+    display: block;
+    background: linear-gradient(135deg, transparent, #6c63ff, #6c63ff,
+    #6c63ff);
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
 }
 
+@media screen and (max-width: 1024px) {
+    .test-container {
+        width: 90%;
+    }
+
+    .testimonials-heading {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .testimonials-heading {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .test-container {
+        width: 94%;
+    }
+
+    .testimonial__body {
+        padding: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .testimonials-heading {
+        font-size: 32px;
+    }
+}
 
 /* ================================ Footer ====================================== */
 .footer__image {
@@ -1454,185 +1781,3 @@ footer ul li a:hover {
         justify-content: center;
     }
 }
-
-
-
-
-/* Responsive */
-
-/* General mobile styles for screens up to 768px */
-/* @media screen and (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 1rem;
-    }
-
-    nav {
-        height: 3.5rem;
-    }
-
-    .nav__menu {
-        display: none;
-        flex-direction: column;
-        background: rgba(0, 0, 0, 0.8);
-        position: absolute;
-        top: 3.5rem;
-        right: 0;
-        width: 100%;
-        text-align: center;
-        z-index: 12;
-    }
-
-    nav button {
-        display: block;
-        background: transparent;
-        border: none;
-        color: black;
-        font-size: 2rem;
-        cursor: pointer;
-    }
-
-    .nav__menu a {
-        padding: 1rem 0;
-        font-size: 1.2rem;
-    }
-
-    .nav__menu.active {
-        display: flex;
-    }
-
-    .banner-slider {
-        height: 400px;
-    }
-
-    .banner-buttons button {
-        width: 30px;
-        height: 30px;
-    }
-
-    .objective-img1, .objective-img2, .objective-img3 {
-        width: 100%;
-        float: none;
-        margin: 0 auto;
-    }
-
-    .object-container1, .object-container2, .object-container3 {
-        margin: 2rem;
-        width: 100%;
-        padding: 1rem;
-        border: 1px solid black;
-    }
-
-    .volunteer-card {
-        width: 80%;
-        margin: 2rem auto;
-    }
-
-    .grid-two-column {
-        grid-template-columns: 1fr;
-    }
-
-    .swiper-client-msg {
-        padding: 1rem;
-    }
-
-    .mission-container, .volunteer-container {
-        padding: 1rem;
-    }
-
-    .volunteer-heading {
-        font-size: 1.5rem;
-        margin: 1rem;
-    }
-}
-
-/* General tablet styles for screens up to 1024px */
-@media screen and (max-width: 1024px) {
-    .container {
-        width: 85%;
-    }
-
-    .nav__menu a {
-        padding: 1rem;
-        font-size: 1rem;
-    }
-
-    .objective-img1,
-    .objective-img2,
-    .objective-img3 {
-        width: 100%;
-        float: none;
-        margin: 1rem auto;
-    }
-
-    .object-container1,
-    .object-container2,
-    .object-container3 {
-        margin: 3rem;
-        width: 90%;
-        padding: 2rem;
-    }
-
-    .volunteer-card {
-        width: 45%;
-        margin: 2rem auto;
-    }
-
-    .grid-two-column {
-        grid-template-columns: 1fr;
-    }
-
-    .swiper-client-msg {
-        padding: 2rem;
-    }
-
-    .mission-container,
-    .volunteer-container {
-        padding: 2rem;
-    }
-
-    .volunteer-heading {
-        font-size: 2rem;
-        margin: 2rem;
-    }
-}
-
-/* Additional styles for very small screens (phones) */
-/*@media screen and (max-width: 480px) {
-   .nav__container {
-        padding: 0 0.5rem;
-    }
-
-    .nav__menu a {
-        font-size: 0.9rem;
-    }
-
-    .banner-slider {
-        height: 300px;
-    }
-
-    .banner-buttons button {
-        width: 25px;
-        height: 25px;
-    }
-
-    .mission-para {
-        font-size: 1rem;
-    }
-
-    .objective-text1, .objective-text2, .objective-text3 {
-        font-size: 0.9rem;
-    }
-
-    .volunteer-card {
-        width: 90%;
-    }
-
-    .swiper-client-msg {
-        padding: 0.5rem;
-    }
-
-    .volunteer-heading {
-        font-size: 1.2rem;
-    }
-} */
