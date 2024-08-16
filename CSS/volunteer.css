@@ -9,7 +9,7 @@ body {
      /* display: flex;
      align-items: center;
      justify-content: center; */
-     background-color: #FE8F50;
+     background-color: #CBE2B5;
      transition: background 0.4s;
      font-family: "Poppins", sans-serif;
  }
@@ -326,7 +326,8 @@ ul {
     border-radius: 6px;
     padding: 30px;
     padding-bottom: 20px;
-    margin: 100px 15px;
+    /* margin: 100px 15px; */
+    margin: 100px auto 150px auto;
     margin-bottom: 150px;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
