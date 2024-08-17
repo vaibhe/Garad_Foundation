@@ -129,7 +129,7 @@
 
                         <div class="input-field">
                             <label>Organization Website</label>
-                            <input type="text" name="Organization Website" placeholder="Enter your website URL">
+                            <input type="url" name="Organization Website" placeholder="Enter your website URL">
                         </div>
 
                         <div class="input-field">
@@ -164,7 +164,7 @@
 
                         <div class="input-field">
                             <label>Year Established <span class="required-label">*</span></label>
-                            <input type="number" name="Year Established" placeholder="Enter your year established" required>
+                            <input type="text" name="Year Established" placeholder="Enter your year established" required>
                         </div>
 
                     </div>
@@ -245,7 +245,11 @@
 
                         <div class="input-field1">
                             <label>Terms and Conditions Agreement <span class="required-label">*</span></label>
-                            <input type="text" name="Terms and Conditions Agreement" placeholder="Accept our Terms and Conditions Agreement">
+                            <select name="Terms and Conditions Agreement" id="type" required>
+                                <option value="" disabled selected>Have you read our Terms and Conditions Agreement ?</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
                         </div>
                            
                     </div>
@@ -278,7 +282,11 @@
 
                         <div class="input-field">
                             <label>Consent to Terms and Privacy Policy <span class="required-label">*</span></label>
-                            <input type="text" name="Consent to Terms and Privacy Policy" placeholder="Give Consent to Terms and Privacy Policy">
+                            <select name="Terms and Privacy Policy" id="type" required>
+                                <option value="" disabled selected>Do you agree with our Terms and Privacy Policy ?</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                            </select>
                         </div>
 
                         <div class="input-field">
