@@ -1,6 +1,6 @@
 /* ============================== DYNAMIC NUMBERS ================================ */
 let valueDisplays = document.querySelectorAll(".numbers-num");
-let interval = 5000;
+let interval = 6000;
 
 valueDisplays.forEach((valueDisplay) => {
     let startValue = 0;
