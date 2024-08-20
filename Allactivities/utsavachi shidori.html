@@ -96,17 +96,22 @@
         </nav>
     </header>
 
+    <!-- ================================= SCROLL UP ============================= -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
 
 
+    <!-- ==================================== Activity Content Section ======================================= -->
 
-    <header class="header">
-        <h1>Utsavachi Shidori: Spreading the Joy of Diwali through Food</h1>
-        <h2>A Festive Food Donation Drive to Brighten Lives</h2>
+    <header class="activity-header">
+        <h1 class="activity-h1">Utsavachi Shidori: Spreading the Joy of Diwali through Food</h1>
+        <h2 class="activity-h2">A Festive Food Donation Drive to Brighten Lives</h2>
     </header>
 
     <section class="introduction">
-        <h3>Introduction</h3>
-        <p>From October 25 to 31, 2019, we organized a special event called Utsavachi Shidori—a food donation drive
+        <h3 class="activity-h3">Introduction</h3>
+        <p class="activity-p">From October 25 to 31, 2019, we organized a special event called Utsavachi Shidori—a food donation drive
             aimed at bringing the joy of Diwali to those who need it most. Diwali is a time of celebration, light, and
             delicious food, but for many underprivileged families, the festive season can be a reminder of what they
             lack. Our goal was to ensure that everyone, regardless of their circumstances, could enjoy the special foods
@@ -115,8 +120,8 @@
     </section>
 
     <section class="details">
-        <h3>Purpose of the Event</h3>
-        <p>The purpose of Utsavachi Shidori was simple: to share the joy of Diwali with those who are less fortunate. We
+        <h3 class="activity-h3">Purpose of the Event</h3>
+        <p class="activity-p">The purpose of Utsavachi Shidori was simple: to share the joy of Diwali with those who are less fortunate. We
             wanted to make sure that even the most disadvantaged members of our community could feel included in the
             festivities by enjoying the traditional foods that are such an important part of the celebration.</p>
         <div class="image-gallery">
@@ -127,14 +132,14 @@
     </section>
 
     <section class="details">
-        <h3>Activities and Highlights</h3>
-        <p>During this week-long drive, our foundation collected donations of various food items, including snacks,
+        <h3 class="activity-h3">Activities and Highlights</h3>
+        <p class="activity-p">During this week-long drive, our foundation collected donations of various food items, including snacks,
             namkeen, and sweets. The response from our community was overwhelming, with many generous contributions
             pouring in.</p>
-        <p>With these donations, we prepared a total of 175 food packets, each filled with a variety of delicious
+        <p class="activity-p">With these donations, we prepared a total of 175 food packets, each filled with a variety of delicious
             snacks. Our volunteers then distributed these food packets to homeless individuals and families in need,
             bringing a little bit of Diwali joy to those who might otherwise go without.</p>
-        <p>The happiness on the faces of those who received the food packets was priceless. For many, it wasn’t just
+        <p class="activity-p">The happiness on the faces of those who received the food packets was priceless. For many, it wasn’t just
             about the food—it was about feeling remembered and cared for during a time when the rest of the world is
             celebrating. The sense of inclusion and warmth that Utsavachi Shidori brought to these individuals was the
             true highlight of the event.</p>
@@ -146,61 +151,140 @@
     </section>
 
     <section class="impact">
-        <h3>Impact and Reflection</h3>
-        <p>Utsavachi Shidori was a beautiful reminder of the power of giving, especially during a time of celebration
+        <h3 class="activity-h3">Impact and Reflection</h3>
+        <p class="activity-p">Utsavachi Shidori was a beautiful reminder of the power of giving, especially during a time of celebration
             like Diwali. By sharing food, we were able to share joy, hope, and a sense of belonging with those who often
             feel left out.</p>
-        <p>This initiative not only helped fill stomachs but also hearts, as it brought a festive spirit to those who
+        <p class="activity-p">This initiative not only helped fill stomachs but also hearts, as it brought a festive spirit to those who
             needed it most. The success of this food drive showed us that when we come together as a community, we can
             make a significant difference in the lives of others.</p>
         <img src="/images/activity_img/utsavachi shidori 7.jpg" alt="Cultural Celebration" class="impact-img">
     </section>
 
     <section class="support">
-        <h3>Join Us in Spreading Joy</h3>
-        <p>Utsavachi Shidori was just one way to give back during the festive season. We encourage everyone to continue
+        <h3 class="activity-h3">Join Us in Spreading Joy</h3>
+        <p class="activity-p">Utsavachi Shidori was just one way to give back during the festive season. We encourage everyone to continue
             finding ways to share joy and support those in need, not just during Diwali but throughout the year.
             Together, we can make every festival a little brighter for everyone.</p>
         <img src="/images/activity_img/utsavachi shidori 9.jpg" alt="Support Our Event" class="support-img">
     </section>
 
 
-    <!-- <footer class="footer">
-        <p>&copy; 2024 Mission Bharari. All rights reserved.</p>
-    </footer> -->
-</body>
+    <!-- ============================================ Footer =============================================-->
+      <footer>
+        <div class="footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo footer__anchor"><h4 class="footer__h4">Garad Foundation</h4></a>
+                <img class="footer__image" src="/images/logo.png" width="90px">
+                <p class="footer__subheading">GLORY OF HUMANITY :)</p>
+            </div>
 
-<script>
-    /*============================== SHOW MENU =================================*/
-    const navMenu = document.getElementById('nav-menu');
-    const navToggle = document.getElementById('nav-toggle');
-    const navClose = document.getElementById('nav-close');
+            <div class="footer__2">
+                <h4 class="footer__h4">Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html" class="footer__anchor">Home</a></li>
+                    <li><a href="about.html" class="footer__anchor">About</a></li>
+                    <li><a href="activity.html" class="footer__anchor">Activities</a></li>
+                    <li><a href="gallery.html" class="footer__anchor">Gallery</a></li>
+                </ul>
+            </div>
 
-    // MENU SHOW
-    // Validate if constant exists
-    if (navToggle) {
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.add('show-menu')
-        })
-    }
+            <div class="footer__3">
+                <h4 class="footer__h4">Address</h4>
+                <ul class="privacy">
+                    <!-- <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li> -->
+                    <p class="footer__para footer__address"> 
+                        B/307, Omdeep Saipooja Society, Above Koshti
+                        Hospital, Dr. Lazarus Road, Beside Charai
+                        Signal, Thane (w), Maharashtra 400601</p>
+                </ul>
+                </div>
 
-    // MENU HIDDEN
-    // Validate if constant exists
-    if (navClose) {
-        navClose.addEventListener('click', () => {
+                <div class="footer__4">
+                    <h4 class="footer__h4">Contact Us</h4>
+                    <div>
+                        <p class="footer__para">+919321468652</p>
+                        <p class="footer__para">garadfoundation@gmail.com</p>
+                    </div>
+
+            <ul class="footer__socials">
+                <li>
+                    <a href="https://www.facebook.com/shivshambhugarad?mibextid=ZbWKwL"  target=”_blank”><i class="fa-brands fa-facebook footer-brand-icons footer__anchor"></i></a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/garad_foundation?igshid=NzZhOTFlYzFmZQ=="  target=”_blank”><i class="fa-brands fa-instagram footer-brand-icons  footer__anchor"></i></a>
+                </li>
+                <li>
+                    <a href="https://youtube.com/@garadfoundation6538?feature=shared"  target=”_blank”><i class="fa-brands fa-youtube footer-brand-icons  footer__anchor"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/garad-foundation/"  target=”_blank”><i class="fa-brands fa-linkedin footer-brand-icons  footer__anchor"></i></a>
+                </li>
+            </ul>
+            </div>    
+        </div>
+        <div class="footer__copyright">
+        <small class="footer__small">Copyright &copy; Garad Foundation</small>
+        </div>
+    </footer>
+
+
+    <!--================================== JS CODE ==============================-->
+
+    <script>
+
+        /*============================== SHOW MENU =================================*/
+        const navMenu = document.getElementById('nav-menu');
+        const navToggle = document.getElementById('nav-toggle');
+        const navClose = document.getElementById('nav-close');
+
+        // MENU SHOW
+        // Validate if constant exists
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.add('show-menu')
+            })
+        }
+
+        // MENU HIDDEN
+        // Validate if constant exists
+        if (navClose) {
+            navClose.addEventListener('click', () => {
+                navMenu.classList.remove('show-menu')
+            })
+        }
+
+        /*=============== REMOVE MENU MOBILE ===============*/
+        const navLink = document.querySelectorAll('.nav__link')
+
+        const linkAction = () => {
+            const navMenu = document.getElementById('nav-menu')
+            // When we click on each nav__link, we remove the show-menu class
             navMenu.classList.remove('show-menu')
-        })
-    }
+        }
+        navLink.forEach(n => n.addEventListener('click', linkAction))
 
-    /*=============== REMOVE MENU MOBILE ===============*/
-    const navLink = document.querySelectorAll('.nav__link')
+        /*=============== CHANGE BACKGROUND HEADER ===============*/
+        const scrollHeader = () =>{
+            const header = document.getElementById('header')
+            // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+            this.scrollY >= 50 ? header.classList.add('bg-header')
+                            : header.classList.remove('bg-header')
+        }
+        window.addEventListener('scroll', scrollHeader)
 
-    const linkAction = () => {
-        const navMenu = document.getElementById('nav-menu')
-        // When we click on each nav__link, we remove the show-menu class
-        navMenu.classList.remove('show-menu')
-    }
-    navLink.forEach(n => n.addEventListener('click', linkAction))
-</script>
+        /* ============================ SHOW SCROLL UP ======================= */
+        const scrollUp = () =>{
+            const scrollUp = document.getElementById('scroll-up')
+            // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup
+            this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
+                                                    : scrollUp.classList.remove('show-scroll')
+        }
+        window.addEventListener('scroll', scrollUp)
+
+    </script>
+
+</body>
 
 </html>

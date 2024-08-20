@@ -651,10 +651,122 @@ h2 {
 }
 
 
+/* ================================ DEVELOPERS ================================== */
+
+.developers h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Fuzzy Bubbles", sans-serif;
+  font-size: 80px;
+  color: rgb(51, 51, 86);
+  line-height: 1;
+  margin-top: 0rem;
+} 
 
 
+.developers {
+  background-color: #CBE2B5;
+}
 
+/* General container styling */
+.container-developers {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 80px;
+}
 
+.row-developers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Center the cards */
+}
+
+.card-developers {
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+  background: black;
+  border-radius: 10px;
+  margin: 20px;
+  /* Adjust margins for better spacing */
+  position: relative;
+  float: none;
+  /* Remove float */
+}
+
+.card-developers:hover {
+  box-shadow: 0px 0px 20px 1px #9592927a;
+}
+
+.bg-developers {
+  width: 90%;
+  transform: rotate(90deg);
+  transition: 1s;
+  margin-left: 20px;
+}
+
+.one-developers {
+  width: 90%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.card-developers:hover .bg-developers {
+  transform: rotate(120deg);
+}
+
+.card-developers h3 {
+  text-align: center;
+  margin-top: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-developers h4 {
+  text-align: center;
+  color: grey;
+  font-weight: 500;
+}
+
+.icon-developers {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icon-developers ion-icon {
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  background: #ffc400;
+  color: #fff;
+  border: 1px solid #ffc400;
+  opacity: 0;
+}
+
+.icon-developers ion-icon:hover {
+  color: grey;
+  border: 1px solid grey;
+  background: transparent;
+}
+
+.card-developers:hover .icon-developers ion-icon {
+  opacity: 1;
+}
+
+@media (max-width: 450px) {
+  .container-developers{
+    width: 80%;
+    
+  }
+  .developers h1{
+    font-size: 54px;
+  }
+}
 
 
 /* ================================ Footer ====================================== */

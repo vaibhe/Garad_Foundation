@@ -320,15 +320,12 @@ ul {
 
 /* ======================================= Form Section ================================= */
 .container {
-    /* position: relative; */
     max-width: 900px;
     width: 100%;
     border-radius: 6px;
     padding: 30px;
     padding-bottom: 20px;
-    /* margin: 100px 15px; */
-    margin: 100px auto 150px auto;
-    margin-bottom: 150px;
+    margin: 100px auto 50px auto;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -546,6 +543,23 @@ form .buttons button, .backBtn {
   transition: width 0.1s linear;
 }
 
+/* ================================ SOCIAL MEDIA LINKS ========================== */
+.social-media-links {
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-left: auto;
+  font-size: 30px;
+}
+
+.ri-facebook-fill:hover, .ri-youtube-fill:hover, .ri-instagram-fill:hover, .ri-linkedin-fill:hover {   
+  background-color: #FE8F50;
+  border-radius: 0.2rem;
+  transition: all 400ms ease;
+}
+
 /* ========= Media Queries Form Section ===================== */
 
 /* Handle media queries for responsive design */
@@ -577,7 +591,7 @@ form .buttons button, .backBtn {
     /* Ensure the container padding and margins are responsive */
     .container {
         padding: 20px;
-        margin: 80px 10px 150px 10px;
+        margin: 80px 10px 50px 10px;
     }
 
     /* Adjust button width for smaller screens */
@@ -591,7 +605,7 @@ form .buttons button, .backBtn {
     /* Further adjustments for very small screens */
     .container {
         padding: 15px;
-        margin: 80px 5px 150px 5px;
+        margin: 80px 5px 50px 5px;
     }
 
     form .fields .input-field, form .fields .input-field1 {
