@@ -615,7 +615,7 @@ p {
 
 .mission {
     background-color: #FFFFFF;
-    padding: 5rem 0;
+    padding: 1rem 0 5rem 0;
 }
 
 .mission-container {
@@ -1671,129 +1671,6 @@ span.numbers-text {
     }
 }
 
-
-
-/* ===== Members ======== */
-
-.members h1 {
-    text-align: center;
-    padding-top: 20px;
-    font-family: "Fuzzy Bubbles", sans-serif;
-    font-size: 80px;
-    color: rgb(51, 51, 86);
-    line-height: 1;
-  } 
-  
-  
-  .members {
-    background-color: #CBE2B5;
-
-  
-  }
-  
-  
-  
-  /* General container styling */
-  .container {
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    padding: 20px;
-
-   
-   
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* Center the cards */
-  }
-  
-  .card {
-    width: 100%;
-    max-width: 300px;
-    height: 400px;
-    background: black;
-    border-radius: 10px;
-    margin: 20px;
-    /* Adjust margins for better spacing */
-    position: relative;
-    float: none;
-    /* Remove float */
-  }
-  
-  .card:hover {
-    box-shadow: 0px 0px 20px 1px #9592927a;
-  }
-  
-  .bg {
-    width: 90%;
-    transform: rotate(90deg);
-    transition: 1s;
-    margin-left: 20px;
-  }
-  
-  .one {
-    width: 90%;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
-  
-  .card:hover .bg {
-    transform: rotate(120deg);
-  }
-  
-  .card h3 {
-    text-align: center;
-    margin-top: 25px;
-    color: #fff;
-    cursor: pointer;
-  }
-  
-  .card h4 {
-    text-align: center;
-    color: grey;
-    font-weight: 500;
-  }
-  
-  .icon {
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .icon ion-icon {
-    font-size: 20px;
-    border-radius: 50%;
-    padding: 8px;
-    cursor: pointer;
-    background: #ffc400;
-    color: #fff;
-    border: 1px solid #ffc400;
-    opacity: 0;
-  }
-  
-  .icon ion-icon:hover {
-    color: grey;
-    border: 1px solid grey;
-    background: transparent;
-  }
-  
-  .card:hover .icon ion-icon {
-    opacity: 1;
-  }
-  
-  @media (max-width: 450px) {
-    .container{
-      width: 80%;
-    }
-    .members h1{
-      font-size: 54px;
-    }
-  }
-  
 
 /* ======================= TESTIMONALS ====================== */
 .test-container {
