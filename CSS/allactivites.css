@@ -339,7 +339,7 @@ ul {
 .activity-p{
     text-align: justify;
     font-size: 1.4rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Lato", sans-serif;
 } 
 
 .introduction,
@@ -369,6 +369,15 @@ ul {
     max-width: 32%;
     margin-bottom: 10px;
 } 
+
+@media screen and (max-width: 420px) {
+    p{
+        font-family: "Lato", sans-serif;
+    }
+
+}
+
+
 
 
 /* ================================ Footer ====================================== */
